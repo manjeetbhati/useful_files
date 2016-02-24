@@ -63,12 +63,14 @@ class NetworksIpAvailabilityTestJSON(base.BaseNetworkTest):
 
     @classmethod
     def is_extension_loaded(self, ext_name):
+        ext_status = False
         loaded_extensions = self.client.list_extensions()
         exts = loaded_extensions['extensions']
         for ext in exts:
             if ext['alias'] == ext_name:
-                return True
-        return False
+                ext_status = True
+                break
+        return ext_status
 
     @classmethod
     def _delete_network(self, network):
@@ -117,18 +119,20 @@ class NetworksIpAvailabilityIPv4TestJSON(NetworksIpAvailabilityTestJSON):
         network = self.create_network(network_name=net_name)
         self.addCleanup(self._delete_network, network)
         subnet, prefix = self._create_subnet(network, 4)
-        self.addCleanup(self.client.delete_subnet, subnet['id'])
-        ports = self.client.list_ports(network_id=network['id'])
-        with open('ui.txt', 'wb') as handle:
-            json.dump(ports, handle)
-        #port = self.client.create_port(network_id=network['id'])
-        #self.addCleanup(self.client.delete_port, port['id'])
+        port1 = self.client.create_port(network_id=network['id'])
+        self.addCleanup(self.client.delete_port, port1['port']['id'])
+        port2 = self.client.create_port(network_id=network['id'])
+        self.addCleanup(self.client.delete_port, port2['port']['id'])
+        port3 = self.client.create_port(network_id=network['id'])
+        self.addCleanup(self.client.delete_port, port3['port']['id'])
         body = self.client.list_network_ip_availabilities()
         availabilities = body['network_ip_availabilities']
         for availability in availabilities:
             if availability['id'] == network['id']:
-                with open('ab.txt', 'wb') as handle:
+                with open('test.txt', 'wb') as handle:
                     json.dump(availability, handle)
+                self.assertEqual(availability['total_ips'],
+                                 calc_total_ips(prefix, 4))
 
 
 class NetworksIpAvailabilityIPv6TestJSON(NetworksIpAvailabilityTestJSON):
