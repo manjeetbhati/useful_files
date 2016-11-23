@@ -1,0 +1,115 @@
+# localrc for DevStack target installation (master)
+
+# Default to selecting an interface via the default route
+unset HOST_IP
+
+DEST=/opt/stack/new
+DATA_DIR=/opt/stack/data
+
+# Timeouts
+ACTIVE_TIMEOUT=120
+ASSOCIATE_TIMEOUT=60
+BOOT_TIMEOUT=120
+SERVICE_TIMEOUT=120
+
+ADMIN_PASSWORD=0penstack
+API_RATE_LIMIT=False
+#KEYSTONE_CATALOG_BACKEND=sql
+LOGDAYS=1
+LOGFILE=$DEST/logs/stack.sh.log
+MYSQL_PASSWORD=superstack
+RABBIT_HOST=localhost
+RABBIT_PASSWORD=superstack
+SCREEN_LOGDIR=$DEST/logs/screen
+SCREEN_NAME=${SCREEN_NAME:-stack}
+SERVICE_PASSWORD=$ADMIN_PASSWORD
+SERVICE_TOKEN=cd0d1a03-b701-4fcb-801a-8b4d0bc3d06e
+STACK_LOG=stack.sh.log
+VOLUME_BACKING_FILE_SIZE=10000M
+
+enable_service s-account s-container s-object s-proxy
+SWIFT_HASH=8213897fads879789asdf789
+SWIFT_REPLICAS=1
+#vvvvvvvvvv devstack-vm-gate.sh localrc vvvvvvvvvv
+Q_USE_DEBUG_COMMAND=True
+NETWORK_GATEWAY=10.1.0.1
+USE_SCREEN=False
+DEST=/opt/stack/new
+# move DATA_DIR outside of DEST to keep DEST a bit cleaner
+DATA_DIR=/opt/stack/data
+ACTIVE_TIMEOUT=90
+BOOT_TIMEOUT=90
+ASSOCIATE_TIMEOUT=60
+TERMINATE_TIMEOUT=60
+MYSQL_PASSWORD=secretmysql
+DATABASE_PASSWORD=secretdatabase
+RABBIT_PASSWORD=secretrabbit
+ADMIN_PASSWORD=secretadmin
+SERVICE_PASSWORD=secretservice
+SERVICE_TOKEN=111222333444
+SWIFT_HASH=1234123412341234
+ROOTSLEEP=0
+# ERROR_ON_CLONE should never be set to FALSE in gate jobs.
+# Setting up git trees must be done by zuul
+# because it needs specific git references directly from gerrit
+# to correctly do testing. Otherwise you are not testing
+# the code you have posted for review.
+#ERROR_ON_CLONE=True
+ENABLED_SERVICES=c-api,c-bak,c-sch,c-vol,ceilometer-acentral,ceilometer-acompute,ceilometer-alarm-evaluator,ceilometer-alarm-notifier,ceilometer-anotification,ceilometer-api,ceilometer-collector,cinder,dstat,g-api,g-reg,key,mysql,n-api,n-cond,n-cpu,n-crt,n-obj,n-sch,q-agt,q-dhcp,q-l3,q-meta,q-metering,q-svc,quantum,rabbit,s-account,s-container,s-object,s-proxy,tempest
+SKIP_EXERCISES=boot_from_volume,bundle,client-env,euca
+SERVICE_HOST=127.0.0.1
+# Screen console logs will capture service logs.
+SYSLOG=False
+SCREEN_LOGDIR=/opt/stack/new/screen-logs
+LOGFILE=/opt/stack/new/devstacklog.txt
+VERBOSE=True
+FIXED_RANGE=10.1.0.0/20
+FLOATING_RANGE=172.24.5.0/24
+PUBLIC_NETWORK_GATEWAY=172.24.5.1
+FIXED_NETWORK_SIZE=4096
+VIRT_DRIVER=libvirt
+SWIFT_REPLICAS=1
+LOG_COLOR=False
+# Don't reset the requirements.txt files after g-r updates
+UNDO_REQUIREMENTS=False
+CINDER_PERIODIC_INTERVAL=10
+export OS_NO_CACHE=True
+CEILOMETER_BACKEND=mysql
+LIBS_FROM_GIT=
+DATABASE_QUERY_LOGGING=True
+# set this until all testing platforms have libvirt >= 1.2.11
+# see bug #1501558
+EBTABLES_RACE_FIX=True
+CINDER_SECURE_DELETE=False
+CINDER_VOLUME_CLEAR=none
+LIBVIRT_TYPE=qemu
+VOLUME_BACKING_FILE_SIZE=24G
+TEMPEST_HTTP_IMAGE=http://git.openstack.org/static/openstack.png
+GRENADE_PHASE=target
+CEILOMETER_USE_MOD_WSGI=False
+FORCE_CONFIG_DRIVE=False
+export TARGET_RUN_SMOKE=False
+export BASE_RUN_SMOKE=False
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+enable_plugin networking-odl http://github.com/openstack/networking-odl.git
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+disable_service q-agt
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+#disable_service q-l3
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+enable_service q-dhcp
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+enable_service q-meta
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+Q_PLUGIN=ml2
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+ODL_CONFIG_BRIDGES=True
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+Q_ML2_PLUGIN_MECHANISM_DRIVERS=opendaylight,openvswitch
+# added by /opt/stack/new/networking-odl/devstack/upgrade/settings
+Q_ML2_PLUGIN_TYPE_DRIVERS=flat,vlan,gre,vxlan
+
+Q_USE_PUBLIC_VETH=True
+Q_PUBLIC_VETH_EX=veth-pub-ex
+Q_PUBLIC_VETH_INT=veth-pub-int
+ODL_PROVIDER_MAPPINGS=${ODL_PROVIDER_MAPPINGS:-br-ex:\${Q_PUBLIC_VETH_INT}}
