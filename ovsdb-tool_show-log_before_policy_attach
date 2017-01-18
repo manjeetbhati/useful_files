@@ -1,0 +1,42 @@
+record 0: "Open_vSwitch" schema, version="7.12.1", cksum="2211824403 22535"
+
+record 1: 2017-01-17 22:56:33.086 "ovs-vsctl: ovs-vsctl --no-wait -- init -- set Open_vSwitch . db-version=7.12.1"
+record 2: 2017-01-17 22:56:33.091 "ovs-vsctl: ovs-vsctl --no-wait set Open_vSwitch . ovs-version=2.5.0 "external-ids:system-id=\"297e3c15-9d9c-408d-a6ee-a21fdebca7aa\"" "system-type=\"Ubuntu\"" "system-version=\"16.04-xenial\"""
+record 3: 2017-01-17 22:56:33.108
+record 4: 2017-01-17 23:09:22.322 "ovs-vsctl: ovs-vsctl set-manager tcp:192.168.237.38:6640"
+record 5: 2017-01-17 23:09:22.323
+record 6: 2017-01-17 23:09:22.345 "ovs-vsctl: ovs-vsctl set Open_vSwitch e4b0e3ca-7767-435b-8996-4dc35989efbd other_config:provider_mappings=br-ex:veth-pub-int"
+record 7: 2017-01-17 23:09:22.346
+record 8: 2017-01-17 23:09:22.380 "ovs-vsctl: ovs-vsctl set Open_vSwitch e4b0e3ca-7767-435b-8996-4dc35989efbd other_config:local_ip=192.168.237.38"
+record 9: 2017-01-17 23:09:22.380
+record 10: 2017-01-17 23:09:22.811 "ovs-vsctl: ovs-vsctl set Open_vSwitch e4b0e3ca-7767-435b-8996-4dc35989efbd external_ids:odl_os_hostconfig_hostid=manjeets-grenade-2"
+record 11: 2017-01-17 23:09:22.812
+record 12: 2017-01-17 23:09:22.818 "ovs-vsctl: ovs-vsctl set Open_vSwitch e4b0e3ca-7767-435b-8996-4dc35989efbd "external_ids:odl_os_hostconfig_config_odl_l2={\"allowed_network_types\": [\"local\", \"vlan\", \"vxlan\", \"gre\"], \"bridge_mappings\": {\"physnet1\": \"br-ex\"}, \"datapath_type\": \"system\", \"supported_vnic_types\": [{\"vif_type\": \"ovs\", \"vnic_type\": \"normal\", \"vif_details\": {\"support_vhost_user\": false, \"has_datapath_type_netdev\": false, \"uuid\": \"e4b0e3ca-7767-435b-8996-4dc35989efbd\", \"host_addresses\": [\"manjeets-grenade-2\"]}}]}""
+record 13: 2017-01-17 23:09:22.818
+record 14: 2017-01-17 23:09:22.903
+record 15: 2017-01-17 23:09:22.946
+record 16: 2017-01-17 23:09:22.946
+record 17: 2017-01-17 23:09:23.134
+record 18: 2017-01-17 23:09:23.137
+record 19: 2017-01-17 23:09:53.150 "ovs-vsctl: /usr/bin/ovs-vsctl --timeout=10 --oneline --format=json -- add-port br-int tap84f6a466-5b -- set Interface tap84f6a466-5b type=internal external_ids:iface-id=84f6a466-5ba7-4ad6-bf9e-d200bbd7a8b2 external_ids:iface-status=active external_ids:attached-mac=fa:16:3e:b4:da:f3"
+record 20: 2017-01-17 23:09:53.156
+record 21: 2017-01-17 23:12:46.771 "ovs-vsctl: ovs-vsctl del-manager"
+record 22: 2017-01-17 23:12:46.773
+record 23: 2017-01-17 23:12:46.798 "ovs-vsctl: ovs-vsctl del-controller br-int"
+record 24: 2017-01-17 23:12:46.814
+record 25: 2017-01-17 23:12:46.875 "ovs-vsctl: ovs-vsctl del-port tap84f6a466-5b"
+record 26: 2017-01-17 23:12:46.920
+record 27: 2017-01-17 23:12:46.986 "ovs-vsctl: ovs-vsctl del-br br-int"
+record 28: 2017-01-17 23:12:47.033
+record 29: 2017-01-17 23:27:17.047 "ovs-vsctl: ovs-vsctl set-manager tcp:192.168.237.38:6640"
+record 30: 2017-01-17 23:27:17.048
+record 31: 2017-01-17 23:27:17.566
+record 32: 2017-01-17 23:27:17.602
+record 33: 2017-01-17 23:27:17.603
+record 34: 2017-01-17 23:27:17.773
+record 35: 2017-01-17 23:27:17.775
+record 36: 2017-01-17 23:28:07.783 "ovs-vsctl: /usr/bin/ovs-vsctl --timeout=10 --oneline --format=json -- add-port br-int tape0f09aa9-9c -- set Interface tape0f09aa9-9c type=internal external_ids:iface-id=e0f09aa9-9c5e-4858-81bd-a5517468c3a7 external_ids:iface-status=active external_ids:attached-mac=fa:16:3e:e8:8f:aa"
+record 37: 2017-01-17 23:28:07.788
+record 38: 2017-01-17 23:49:36.991 "ovs-vsctl: /usr/bin/ovs-vsctl --timeout=10 --oneline --format=json -- add-port br-int tap22f47e18-e6 -- set Interface tap22f47e18-e6 type=internal external_ids:iface-id=22f47e18-e6c3-444c-a1ea-1e4ebfa161ea external_ids:iface-status=active external_ids:attached-mac=fa:16:3e:8d:d6:71"
+record 39: 2017-01-17 23:49:36.998
+record 40: 2017-01-17 23:51:09.320

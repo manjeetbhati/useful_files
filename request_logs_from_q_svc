@@ -1,0 +1,118 @@
+Reuest1
+_______
+
+2017-01-17 23:51:09.296 10202 DEBUG oslo_messaging._drivers.amqpdriver [req-91b80485-3c26-49aa-8531-289bad59cae6 admin -] CAST unique_id: 0317ca85e2624ffebc07c467f70e8836 exchange 'neutron' topic 'dhcp_agent.manjeets-grenade-2' _send /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:442
+2017-01-17 23:51:09.298 10202 DEBUG networking_odl.common.client [req-91b80485-3c26-49aa-8531-289bad59cae6 admin -] Sending METHOD (put) URL (http://192.168.237.38:8087/controller/nb/v2/neutron/networks/fb287f61-2c08-42be-a56c-964cf911ac47) JSON ({
+  "network": {
+    "provider:physical_network": null, 
+    "ipv6_address_scope": null, 
+    "revision_number": 6, 
+    "port_security_enabled": true, 
+    "mtu": 1450, 
+    "router:external": false, 
+    "availability_zone_hints": [], 
+    "availability_zones": [
+      "nova"
+    ], 
+    "provider:segmentation_id": 78, 
+    "ipv4_address_scope": null, 
+    "shared": false, 
+    "project_id": "55fdfde45571478c811841c6318312b1", 
+    "description": "", 
+    "tags": [], 
+    "updated_at": "2017-01-17T23:51:09Z", 
+    "qos_policy_id": "01df5fa1-848c-4470-8b4b-c329c280845c", 
+    "name": "test", 
+    "admin_state_up": true, 
+    "created_at": "2017-01-17T23:45:05Z", 
+    "provider:network_type": "vxlan", 
+    "vlan_transparent": null
+  }
+}) request /opt/stack/new/networking-odl/networking_odl/common/client.py:86
+2017-01-17 23:51:09.302 10204 DEBUG oslo_messaging._drivers.amqpdriver [-] received message msg_id: 62b50ffadcae48809207fdaa7bf756a8 reply to reply_7ad883a70676484e85af2e076d5faf6f __call__ /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:194
+2017-01-17 23:51:09.303 10204 DEBUG neutron.api.rpc.handlers.dhcp_rpc [req-25ad4aec-89f0-4e83-8847-87cd930eaa8e - -] Network fb287f61-2c08-42be-a56c-964cf911ac47 requested from manjeets-grenade-2 get_network_info /opt/stack/new/neutron/neutron/api/rpc/handlers/dhcp_rpc.py:191
+2017-01-17 23:51:09.311 10202 DEBUG networking_odl.common.client [req-91b80485-3c26-49aa-8531-289bad59cae6 admin -] Got response:
+({
+   "network" : {
+      "id" : "fb287f61-2c08-42be-a56c-964cf911ac47",
+      "tenant_id" : "55fdfde45571478c811841c6318312b1",
+      "name" : "test",
+      "admin_state_up" : true,
+      "status" : "ACTIVE",
+      "shared" : false,
+      "router:external" : false,
+      "provider:network_type" : "vxlan",
+      "provider:segmentation_id" : "78",
+      "segments" : [ ],
+      "qos_policy_id" : "01df5fa1-848c-4470-8b4b-c329c280845c"
+   }
+}) _check_rensponse /opt/stack/new/networking-odl/networking_odl/common/client.py:141
+2017-01-17 23:51:09.312 10202 DEBUG oslo_messaging._drivers.amqpdriver [req-91b80485-3c26-49aa-8531-289bad59cae6 admin -] CAST unique_id: c3856d9608784ee985eb79c9b0b83ef9 FANOUT topic 'q-agent-notifier-network-update' _send /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:431
+2017-01-17 23:51:09.314 10202 DEBUG neutron.callbacks.manager [req-91b80485-3c26-49aa-8531-289bad59cae6 admin -] Notify callbacks [('neutron.api.rpc.agentnotifiers.dhcp_rpc_agent_api.DhcpAgentNotifyAPI._send_dhcp_notification-7760404', <bound method DhcpAgentNotifyAPI._send_dhcp_notification of <neutron.api.rpc.agentnotifiers.dhcp_rpc_agent_api.DhcpAgentNotifyAPI object at 0x7fe78b283110>>)] for network, before_response _notify_loop /opt/stack/new/neutron/neutron/callbacks/manager.py:142
+2017-01-17 23:51:09.315 10202 INFO neutron.wsgi [req-91b80485-3c26-49aa-8531-289bad59cae6 admin -] 192.168.237.38 - - [17/Jan/2017 23:51:09] "PUT /v2.0/networks/fb287f61-2c08-42be-a56c-964cf911ac47.json HTTP/1.1" 200 963 0.353828
+2017-01-17 23:51:09.435 10204 DEBUG oslo_messaging._drivers.amqpdriver [req-25ad4aec-89f0-4e83-8847-87cd930eaa8e - -] sending reply msg_id: 62b50ffadcae48809207fdaa7bf756a8 reply queue: reply_7ad883a70676484e85af2e076d5faf6f time elapsed: 0.133239577s _send_reply /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:73
+2017-01-17 23:51:09.776 10204 DEBUG oslo_messaging._drivers.amqpdriver [-] received message msg_id: f19cb86f95664515a70c4ce07b9940a7 reply to reply_7ad883a70676484e85af2e076d5faf6f __call__ /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:194
+2017-01-17 23:51:09.786 10204 DEBUG neutron.db.provisioning_blocks [req-15cf307e-a8e6-4534-a833-b326117d7102 - -] Provisioning complete for port 22f47e18-e6c3-444c-a1ea-1e4ebfa161ea triggered by entity DHCP. provisioning_complete /opt/stack/new/neutron/neutron/db/provisioning_blocks.py:145
+2017-01-17 23:51:09.787 10204 DEBUG neutron.callbacks.manager [req-15cf307e-a8e6-4534-a833-b326117d7102 - -] Notify callbacks [('neutron.plugins.ml2.plugin.Ml2Plugin._port_provisioned-7947917', <bound method Ml2Plugin._port_provisioned of <neutron.plugins.ml2.plugin.Ml2Plugin object at 0x7fe78c526dd0>>)] for port, provisioning_complete _notify_loop /opt/stack/new/neutron/neutron/callbacks/manager.py:142
+2017-01-17 23:51:09.801 10204 DEBUG oslo_messaging._drivers.amqpdriver [req-15cf307e-a8e6-4534-a833-b326117d7102 - -] sending reply msg_id: f19cb86f95664515a70c4ce07b9940a7 reply queue: reply_7ad883a70676484e85af2e076d5faf6f time elapsed: 0.0243873899999s _send_reply /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:73
+2017-01-17 23:51:24.555 10205 DEBUG oslo_messaging._drivers.amqpdriver [-] received message msg_id: 8e9f29b0d3ce4597854006839462fe5e reply to reply_7ad883a70676484e85af2e076d5faf6f __call__ /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:194
+
+
+Request 2 changing-policy
+-------------------------
+
+2017-01-17 23:58:19.878 10202 DEBUG oslo_messaging._drivers.amqpdriver [req-791044e7-9d5c-46ff-95ad-6097db831d37 admin -] CAST unique_id: 0d08cd055cdc4a03aadf196d75313a5c exchange 'neutron' topic 'dhcp_agent.manjeets-grenade-2' _send /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:442
+2017-01-17 23:58:19.879 10202 DEBUG networking_odl.common.client [req-791044e7-9d5c-46ff-95ad-6097db831d37 admin -] Sending METHOD (put) URL (http://192.168.237.38:8087/controller/nb/v2/neutron/networks/fb287f61-2c08-42be-a56c-964cf911ac47) JSON ({
+  "network": {
+    "provider:physical_network": null, 
+    "ipv6_address_scope": null, 
+    "revision_number": 8, 
+    "port_security_enabled": true, 
+    "mtu": 1450, 
+    "router:external": false, 
+    "availability_zone_hints": [], 
+    "availability_zones": [
+      "nova"
+    ], 
+    "provider:segmentation_id": 78, 
+    "ipv4_address_scope": null, 
+    "shared": false, 
+    "project_id": "55fdfde45571478c811841c6318312b1", 
+    "description": "", 
+    "tags": [], 
+    "updated_at": "2017-01-17T23:58:19Z", 
+    "qos_policy_id": "01df5fa1-848c-4470-8b4b-c329c280845c", 
+    "name": "test", 
+    "admin_state_up": true, 
+    "created_at": "2017-01-17T23:45:05Z", 
+    "provider:network_type": "vxlan", 
+    "vlan_transparent": null
+  }
+}) request /opt/stack/new/networking-odl/networking_odl/common/client.py:86
+2017-01-17 23:58:19.885 10204 DEBUG oslo_messaging._drivers.amqpdriver [-] received message msg_id: e64815ff1f8b4d4d97f7323a57778802 reply to reply_7ad883a70676484e85af2e076d5faf6f __call__ /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:194
+2017-01-17 23:58:19.888 10204 DEBUG neutron.api.rpc.handlers.dhcp_rpc [req-8919834d-cbf7-4839-a0c4-37a041e7a882 - -] Network fb287f61-2c08-42be-a56c-964cf911ac47 requested from manjeets-grenade-2 get_network_info /opt/stack/new/neutron/neutron/api/rpc/handlers/dhcp_rpc.py:191
+2017-01-17 23:58:19.895 10202 DEBUG networking_odl.common.client [req-791044e7-9d5c-46ff-95ad-6097db831d37 admin -] Got response:
+({
+   "network" : {
+      "id" : "fb287f61-2c08-42be-a56c-964cf911ac47",
+      "tenant_id" : "55fdfde45571478c811841c6318312b1",
+      "name" : "test",
+      "admin_state_up" : true,
+      "status" : "ACTIVE",
+      "shared" : false,
+      "router:external" : false,
+      "provider:network_type" : "vxlan",
+      "provider:segmentation_id" : "78",
+      "segments" : [ ],
+      "qos_policy_id" : "01df5fa1-848c-4470-8b4b-c329c280845c"
+   }
+}) _check_rensponse /opt/stack/new/networking-odl/networking_odl/common/client.py:141
+2017-01-17 23:58:19.897 10202 DEBUG neutron.callbacks.manager [req-791044e7-9d5c-46ff-95ad-6097db831d37 admin -] Notify callbacks [('neutron.api.rpc.agentnotifiers.dhcp_rpc_agent_api.DhcpAgentNotifyAPI._send_dhcp_notification-7760404', <bound method DhcpAgentNotifyAPI._send_dhcp_notification of <neutron.api.rpc.agentnotifiers.dhcp_rpc_agent_api.DhcpAgentNotifyAPI object at 0x7fe78b283110>>)] for network, before_response _notify_loop /opt/stack/new/neutron/neutron/callbacks/manager.py:142
+2017-01-17 23:58:19.897 10202 INFO neutron.wsgi [req-791044e7-9d5c-46ff-95ad-6097db831d37 admin -] 192.168.237.38 - - [17/Jan/2017 23:58:19] "PUT /v2.0/networks/fb287f61-2c08-42be-a56c-964cf911ac47.json HTTP/1.1" 200 963 0.328627
+2017-01-17 23:58:20.006 10204 DEBUG oslo_messaging._drivers.amqpdriver [req-8919834d-cbf7-4839-a0c4-37a041e7a882 - -] sending reply msg_id: e64815ff1f8b4d4d97f7323a57778802 reply queue: reply_7ad883a70676484e85af2e076d5faf6f time elapsed: 0.120166968s _send_reply /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:73
+2017-01-17 23:58:20.329 10204 DEBUG oslo_messaging._drivers.amqpdriver [-] received message msg_id: 285b67a340c24590a4015bca0def4b1f reply to reply_7ad883a70676484e85af2e076d5faf6f __call__ /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:194
+2017-01-17 23:58:20.338 10204 DEBUG neutron.db.provisioning_blocks [req-db4b4a33-9419-4839-a6b1-74dedc7f6c30 - -] Provisioning complete for port 22f47e18-e6c3-444c-a1ea-1e4ebfa161ea triggered by entity DHCP. provisioning_complete /opt/stack/new/neutron/neutron/db/provisioning_blocks.py:145
+2017-01-17 23:58:20.339 10204 DEBUG neutron.callbacks.manager [req-db4b4a33-9419-4839-a6b1-74dedc7f6c30 - -] Notify callbacks [('neutron.plugins.ml2.plugin.Ml2Plugin._port_provisioned-7947917', <bound method Ml2Plugin._port_provisioned of <neutron.plugins.ml2.plugin.Ml2Plugin object at 0x7fe78c526dd0>>)] for port, provisioning_complete _notify_loop /opt/stack/new/neutron/neutron/callbacks/manager.py:142
+2017-01-17 23:58:20.352 10204 DEBUG oslo_messaging._drivers.amqpdriver [req-db4b4a33-9419-4839-a6b1-74dedc7f6c30 - -] sending reply msg_id: 285b67a340c24590a4015bca0def4b1f reply queue: reply_7ad883a70676484e85af2e076d5faf6f time elapsed: 0.02250972s _send_reply /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:73
+2017-01-17 23:58:24.570 10205 DEBUG oslo_messaging._drivers.amqpdriver [-] received message msg_id: d418c5562efc4f9f8e0bf7360f972cc6 reply to reply_7ad883a70676484e85af2e076d5faf6f __call__ /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:194
+2017-01-17 23:58:24.581 10205 DEBUG neutron.callbacks.manager [req-46077530-1d91-4eeb-9006-58e4ce2bb0d4 - -] Notify callbacks [('neutron.services.segments.db._update_segment_host_mapping_for_agent--9223363247326057054', <function _update_segment_host_mapping_for_agent at 0x7fe78bcada28>)] for agent, after_update _notify_loop /opt/stack/new/neutron/neutron/callbacks/manager.py:142
