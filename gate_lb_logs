@@ -1,0 +1,286 @@
+./0314a0b/logs/grenade.sh.txt
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27,280 25526 ERROR    [tempest.scenario.manager] Public network connectivity check failed
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager Traceback (most recent call last):
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 609, in check_public_network_connectivity
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     mtu=mtu)
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 592, in check_vm_connectivity
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     msg=msg)
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "/opt/stack/old/tempest/.tox/tempest/local/lib/python2.7/site-packages/unittest2/case.py", line 702, in assertTrue
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     raise self.failureException(msg)
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager AssertionError: False is not true : Timed out waiting for 172.24.5.14 to become reachable
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager
+./0314a0b/logs/old/screen-n-cpu.txt
+2017-03-13 06:29:11.718 19178 ERROR nova.compute.manager [req-14939525-84d7-4911-b733-265d719f6081 - -] No compute node record for host ubuntu-xenial-2-node-rax-ord-7837330
+2017-03-13 06:29:12.189 19178 ERROR nova.scheduler.client.report [req-14939525-84d7-4911-b733-265d719f6081 - -] Failed to create resource provider record in placement API for UUID 5767153a-b201-4654-8ab8-a423d69396e5. Got 404: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+2017-03-13 06:29:12.322 19178 ERROR nova.scheduler.client.report [req-14939525-84d7-4911-b733-265d719f6081 - -] Failed to create resource provider record in placement API for UUID 5767153a-b201-4654-8ab8-a423d69396e5. Got 404: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server [req-05b08340-ebf6-47df-8621-460c2607e1fc tempest-AttachInterfacesTestJSON-834287275 tempest-AttachInterfacesTestJSON-834287275] Exception during message handling
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server Traceback (most recent call last):
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/server.py", line 155, in _process_incoming
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     res = self.dispatcher.dispatch(message)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 222, in dispatch
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return self._do_dispatch(endpoint, method, ctxt, args)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 192, in _do_dispatch
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     result = func(ctxt, **new_args)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 75, in wrapped
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     function_name, call_dict, binary)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 66, in wrapped
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(self, context, *args, **kw)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 204, in decorated_function
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return function(self, context, *args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 4060, in add_fixed_ip_to_instance
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     instance.save()
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_versionedobjects/base.py", line 210, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     ctxt, self, fn.__name__, args, kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/conductor/rpcapi.py", line 244, in object_action
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     objmethod=objmethod, args=args, kwargs=kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/client.py", line 169, in call
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     retry=self.retry)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/transport.py", line 97, in _send
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     timeout=timeout, retry=retry)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py", line 458, in send
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     retry=retry)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py", line 449, in _send
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     raise result
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server InstanceNotFound_Remote: Instance 7f44bf89-e16b-4fbd-8445-9be0f0ae3bad could not be found.
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server Traceback (most recent call last):
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/conductor/manager.py", line 92, in _object_dispatch
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return getattr(target, method)(*args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_versionedobjects/base.py", line 226, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return fn(self, *args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/objects/instance.py", line 777, in save
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     columns_to_join=_expected_cols(expected_attrs))
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/api.py", line 840, in instance_update_and_get_original
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     expected=expected)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 180, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(*args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_db/api.py", line 151, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     ectxt.value = e.inner_exc
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_db/api.py", line 139, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(*args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 251, in wrapped
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(context, *args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 2708, in instance_update_and_get_original
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     columns_to_join=columns_to_join)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 1905, in _instance_get_by_uuid
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     raise exception.InstanceNotFound(instance_id=uuid)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server InstanceNotFound: Instance 7f44bf89-e16b-4fbd-8445-9be0f0ae3bad could not be found.
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server [req-33b625ce-7e24-4220-9974-4bb77e5ebf15 tempest-AttachInterfacesTestJSON-834287275 tempest-AttachInterfacesTestJSON-834287275] Exception during message handling
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server Traceback (most recent call last):
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/server.py", line 155, in _process_incoming
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     res = self.dispatcher.dispatch(message)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 222, in dispatch
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     return self._do_dispatch(endpoint, method, ctxt, args)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 192, in _do_dispatch
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     result = func(ctxt, **new_args)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 75, in wrapped
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     function_name, call_dict, binary)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 66, in wrapped
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     return f(self, context, *args, **kw)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 216, in decorated_function
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     kwargs['instance'], e, sys.exc_info())
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 204, in decorated_function
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     return function(self, context, *args, **kwargs)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 4077, in remove_fixed_ip_from_instance
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     address)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/network/base_api.py", line 77, in wrapper
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     res = f(self, context, *args, **kwargs)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/network/neutronv2/api.py", line 1402, in remove_fixed_ip_from_instance
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     instance_uuid=instance.uuid, ip=address)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server FixedIpNotFoundForSpecificInstance: Instance 7f44bf89-e16b-4fbd-8445-9be0f0ae3bad doesn't have fixed IP '10.1.0.11'.
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server
+./0314a0b/logs/old/tempest.txt
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager [-] Public network connectivity check failed
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager Traceback (most recent call last):
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 609, in check_public_network_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     mtu=mtu)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 592, in check_vm_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     msg=msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "/opt/stack/old/tempest/.tox/tempest/local/lib/python2.7/site-packages/unittest2/case.py", line 702, in assertTrue
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     raise self.failureException(msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager AssertionError: False is not true : Timed out waiting for 172.24.5.14 to become reachable
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager
+./0314a0b/logs/old/testr_results.html
+2017-03-13 06:43:27,280 25526 ERROR    [tempest.scenario.manager] Public network connectivity check failed
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager Traceback (most recent call last):
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 609, in check_public_network_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     mtu=mtu)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 592, in check_vm_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     msg=msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "/opt/stack/old/tempest/.tox/tempest/local/lib/python2.7/site-packages/unittest2/case.py", line 702, in assertTrue
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     raise self.failureException(msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager AssertionError: False is not true : Timed out waiting for 172.24.5.14 to become reachable
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager
+./0314a0b/logs/subnode-2/old/screen-n-cpu.txt
+2017-03-13 06:37:03.837 28949 ERROR nova.compute.manager [req-1e99447c-166d-4081-af18-d143c9f351d8 - -] No compute node record for host ubuntu-xenial-2-node-rax-ord-7837330-469230
+./op
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27,280 25526 ERROR    [tempest.scenario.manager] Public network connectivity check failed
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager Traceback (most recent call last):
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 609, in check_public_network_connectivity
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     mtu=mtu)
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 592, in check_vm_connectivity
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     msg=msg)
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "/opt/stack/old/tempest/.tox/tempest/local/lib/python2.7/site-packages/unittest2/case.py", line 702, in assertTrue
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     raise self.failureException(msg)
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager AssertionError: False is not true : Timed out waiting for 172.24.5.14 to become reachable
+2017-03-13 06:43:38.270 |     2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager
+2017-03-13 06:29:11.718 19178 ERROR nova.compute.manager [req-14939525-84d7-4911-b733-265d719f6081 - -] No compute node record for host ubuntu-xenial-2-node-rax-ord-7837330
+2017-03-13 06:29:12.189 19178 ERROR nova.scheduler.client.report [req-14939525-84d7-4911-b733-265d719f6081 - -] Failed to create resource provider record in placement API for UUID 5767153a-b201-4654-8ab8-a423d69396e5. Got 404: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+2017-03-13 06:29:12.322 19178 ERROR nova.scheduler.client.report [req-14939525-84d7-4911-b733-265d719f6081 - -] Failed to create resource provider record in placement API for UUID 5767153a-b201-4654-8ab8-a423d69396e5. Got 404: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server [req-05b08340-ebf6-47df-8621-460c2607e1fc tempest-AttachInterfacesTestJSON-834287275 tempest-AttachInterfacesTestJSON-834287275] Exception during message handling
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server Traceback (most recent call last):
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/server.py", line 155, in _process_incoming
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     res = self.dispatcher.dispatch(message)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 222, in dispatch
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return self._do_dispatch(endpoint, method, ctxt, args)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 192, in _do_dispatch
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     result = func(ctxt, **new_args)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 75, in wrapped
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     function_name, call_dict, binary)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 66, in wrapped
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(self, context, *args, **kw)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 204, in decorated_function
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return function(self, context, *args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 4060, in add_fixed_ip_to_instance
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     instance.save()
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_versionedobjects/base.py", line 210, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     ctxt, self, fn.__name__, args, kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/conductor/rpcapi.py", line 244, in object_action
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     objmethod=objmethod, args=args, kwargs=kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/client.py", line 169, in call
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     retry=self.retry)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/transport.py", line 97, in _send
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     timeout=timeout, retry=retry)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py", line 458, in send
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     retry=retry)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py", line 449, in _send
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     raise result
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server InstanceNotFound_Remote: Instance 7f44bf89-e16b-4fbd-8445-9be0f0ae3bad could not be found.
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server Traceback (most recent call last):
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/conductor/manager.py", line 92, in _object_dispatch
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return getattr(target, method)(*args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_versionedobjects/base.py", line 226, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return fn(self, *args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/objects/instance.py", line 777, in save
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     columns_to_join=_expected_cols(expected_attrs))
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/api.py", line 840, in instance_update_and_get_original
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     expected=expected)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 180, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(*args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_db/api.py", line 151, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     ectxt.value = e.inner_exc
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_db/api.py", line 139, in wrapper
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(*args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 251, in wrapped
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     return f(context, *args, **kwargs)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 2708, in instance_update_and_get_original
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     columns_to_join=columns_to_join)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/db/sqlalchemy/api.py", line 1905, in _instance_get_by_uuid
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server     raise exception.InstanceNotFound(instance_id=uuid)
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server InstanceNotFound: Instance 7f44bf89-e16b-4fbd-8445-9be0f0ae3bad could not be found.
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.680 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server [req-33b625ce-7e24-4220-9974-4bb77e5ebf15 tempest-AttachInterfacesTestJSON-834287275 tempest-AttachInterfacesTestJSON-834287275] Exception during message handling
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server Traceback (most recent call last):
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/server.py", line 155, in _process_incoming
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     res = self.dispatcher.dispatch(message)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 222, in dispatch
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     return self._do_dispatch(endpoint, method, ctxt, args)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_messaging/rpc/dispatcher.py", line 192, in _do_dispatch
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     result = func(ctxt, **new_args)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 75, in wrapped
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     function_name, call_dict, binary)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/exception_wrapper.py", line 66, in wrapped
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     return f(self, context, *args, **kw)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 216, in decorated_function
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     kwargs['instance'], e, sys.exc_info())
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 220, in __exit__
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     self.force_reraise()
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py", line 196, in force_reraise
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     six.reraise(self.type_, self.value, self.tb)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 204, in decorated_function
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     return function(self, context, *args, **kwargs)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/compute/manager.py", line 4077, in remove_fixed_ip_from_instance
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     address)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/network/base_api.py", line 77, in wrapper
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     res = f(self, context, *args, **kwargs)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server   File "/opt/stack/old/nova/nova/network/neutronv2/api.py", line 1402, in remove_fixed_ip_from_instance
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server     instance_uuid=instance.uuid, ip=address)
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server FixedIpNotFoundForSpecificInstance: Instance 7f44bf89-e16b-4fbd-8445-9be0f0ae3bad doesn't have fixed IP '10.1.0.11'.
+2017-03-13 06:37:48.930 19178 ERROR oslo_messaging.rpc.server
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager [-] Public network connectivity check failed
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager Traceback (most recent call last):
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 609, in check_public_network_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     mtu=mtu)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 592, in check_vm_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     msg=msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "/opt/stack/old/tempest/.tox/tempest/local/lib/python2.7/site-packages/unittest2/case.py", line 702, in assertTrue
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     raise self.failureException(msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager AssertionError: False is not true : Timed out waiting for 172.24.5.14 to become reachable
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager
+2017-03-13 06:43:27,280 25526 ERROR    [tempest.scenario.manager] Public network connectivity check failed
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager Traceback (most recent call last):
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 609, in check_public_network_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     mtu=mtu)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "tempest/scenario/manager.py", line 592, in check_vm_connectivity
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     msg=msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager   File "/opt/stack/old/tempest/.tox/tempest/local/lib/python2.7/site-packages/unittest2/case.py", line 702, in assertTrue
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager     raise self.failureException(msg)
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager AssertionError: False is not true : Timed out waiting for 172.24.5.14 to become reachable
+2017-03-13 06:43:27.280 25526 ERROR tempest.scenario.manager
+2017-03-13 06:37:03.837 28949 ERROR nova.compute.manager [req-1e99447c-166d-4081-af18-d143c9f351d8 - -] No compute node record for host ubuntu-xenial-2-node-rax-ord-7837330-469230
