@@ -1,0 +1,27 @@
+[user]
+email =
+name = 
+
+[core]
+editor = 
+
+[gitreview]
+username = 
+
+[alias]
+cia = commit --amend
+ci = commit
+co = clone
+rbi = rebase --interactive
+chp = cherry-pick
+st = status
+br = branch
+re = review
+seti = reset --hard HEAD~1
+reb = rebase origin/master
+netdl = clone https://github.com/openstack/networking-odl
+octavia = clone https://github.com/openstack/octavia
+neutron = clone https://github.com/openstack/neutron
+devstack = clone https://github.com/openstack-dev/devstack
+projectconfig = clone https://github.com/openstack-infra/project-config
+devgate = clone https://github.com/openstack-infra/devstack-gate
