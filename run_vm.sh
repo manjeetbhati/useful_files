@@ -1,10 +1,14 @@
 # Add Neutron security groups for ping and ssh
 
+nova boot --flavor m1.tiny --image cirros-0.3.5-x86_64-disk --nic net-id=`neutron net-list | grep private | awk '{print $2}'` --max-count 1 test
+
+SG=`nova list-secgroup  test | grep default | awk '{print $2}'`
+
 neutron security-group-rule-create   \
         --protocol icmp              \
         --direction ingress          \
         --remote-ip-prefix 0.0.0.0/0 \
-	3f682690-2704-4f3b-8e92-5f48e4f6da42
+	    $SG
 
 neutron security-group-rule-create   \
         --protocol tcp               \
@@ -12,11 +16,9 @@ neutron security-group-rule-create   \
         --port-range-max 22          \
         --direction ingress          \
         --remote-ip-prefix 0.0.0.0/0 \
-	3f682690-2704-4f3b-8e92-5f48e4f6da42
+        $SG
 
-nova boot --flavor m1.tiny --image cirros-0.3.5-x86_64-disk --nic net-id=`neutron net-list | grep private | awk '{print $2}'` --max-count 1 test
+FIP=`neutron floatingip-create public | grep "floating_ip_address" | awk '{print $4}'`
 
-neutron floatingip-create public
-
-#nova floating-ip-associate test
+openstack server add floating ip test $FIP
 
