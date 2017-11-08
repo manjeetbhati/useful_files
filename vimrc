@@ -66,6 +66,9 @@
   " see :h vundle for more details or wiki for FAQ
   " Put your non-Plugin stuff after this line
   " !!!!!!!!!!! END-VUNDLE !!!!!!!!!!!!!!!!
+
+syntax on
+  
 set background=dark
 set expandtab
 set tabstop=4
