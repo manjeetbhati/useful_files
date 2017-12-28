@@ -11,7 +11,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 echo "Installing YouComplete This may not work if it is Ubuntu 14.04-----"
-sudo apt-get install sudo apt-get install build-essential cmake
+sudo apt-get install build-essential cmake
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py
 cd
