@@ -12,6 +12,11 @@ vim +PluginInstall +qall
 
 echo "Installing YouComplete This may not work if it is Ubuntu 14.04-----"
 sudo apt-get install build-essential cmake
+
+# this resolved 'YCM core library not detected' error
+# Source: https://github.com/Valloric/YouCompleteMe/blob/master/README.md#ubuntu-linux-x64
+sudo apt-get install python-dev python3-dev
+
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py
 cd
