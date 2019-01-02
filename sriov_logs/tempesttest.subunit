@@ -1,0 +1,30 @@
+≥/Å@µ\-91ﬂÏ‡@ñneutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS.test_tap_flow_data_mirroring[id-40903cbd-0e3c-464d-b311-dc77d3894e65,network,slow]worker-00¬j?r≥/‡@—\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback#Traceback (most recent call last):
+0í !ÿ≥/‡A\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@W  File "tempest/test.py", line 172, in setUpClass
+    six.reraise(etype, value, trace)
+0·FvH≥/‡@˝\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@N  File "tempest/test.py", line 157, in setUpClass
+    cls.setup_credentials()
+0{F≤Ÿ≥/‡A\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@_  File "tempest/test.py", line 373, in setup_credentials
+    credential_type=credentials_type)
+0¨s«t≥/‡A"\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@s  File "tempest/test.py", line 676, in get_client_manager
+    creds = getattr(cred_provider, credentials_method)()
+0rt≥/‡A'\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@x  File "tempest/lib/common/dynamic_creds.py", line 353, in get_primary_creds
+    return self.get_credentials('primary')
+0ı¯†≠≥/‡A\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@f  File "tempest/lib/common/dynamic_creds.py", line 345, in get_credentials
+    credentials.tenant_id)
+0káòà≥/‡A@\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@ë  File "tempest/lib/common/dynamic_creds.py", line 254, in _create_network_resources
+    network = self._create_network(network_name, tenant_id)
+0ø?¢˜≥/‡A\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@o  File "tempest/lib/common/dynamic_creds.py", line 283, in _create_network
+    name=name, tenant_id=tenant_id)
+0(£Pú≥/‡A4\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@Ö  File "tempest/lib/services/network/networks_client.py", line 27, in create_network
+    return self.create_resource(uri, post_data)
+0÷˝“º≥/‡A-\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@~  File "tempest/lib/services/network/base.py", line 61, in create_resource
+    resp, body = self.post(req_uri, req_post_data)
+0Ö6∑ã≥/‡A9\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@ä  File "tempest/lib/common/rest_client.py", line 280, in post
+    return self.request('POST', url, extra_headers, headers, body, chunked)
+0ÃÂH>≥/‡A\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@j  File "tempest/lib/common/rest_client.py", line 676, in request
+    self._error_checker(resp, resp_body)
+0wV*≥/‡A\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@W  File "tempest/lib/common/rest_client.py", line 857, in _error_checker
+    resp=resp)
+0Ω3åi≥/A\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-03text/x-traceback; charset="utf8"; language="python"	traceback@^tempest.lib.exceptions.UnexpectedResponseCode: Unexpected response code received
+Details: 503
+0è"ó ≥/Ü@o\-93‚¨–@PsetUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)worker-00h¿LÏ

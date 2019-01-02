@@ -1,0 +1,914 @@
+-- Logs begin at Wed 2019-01-02 13:59:50 PST, end at Wed 2019-01-02 14:20:39 PST. --
+Jan 02 13:59:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 13:59:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 13:59:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 13:59:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:00:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:00:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:00:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:00:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:00:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:00:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:01:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:01:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:01:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:01:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:01:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:02:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:02:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:02:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:02:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:02:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:02:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:03:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:03:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:03:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:03:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:03:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:04:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:04:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:04:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:04:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:04:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:04:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:05:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:05:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:05:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:05:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:05:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:06:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:06:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:06:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:06:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:06:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:06:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:07:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:07:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:07:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:07:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:07:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:08:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:08:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:08:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:08:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:08:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:08:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:09:10 jfz1r03h11 neutron-l3-agent[16479]: WARNING ovsdbapp.backend.ovs_idl.vlog [-] tcp:127.0.0.1:6640: connection attempt failed (Connection refused)
+Jan 02 14:09:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:09:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:09:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:09:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:09:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:10:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:10:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:10:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:10:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:10:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:10:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:11:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:11:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:11:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:11:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:11:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:12:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:12:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:12:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:12:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:12:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:12:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:13:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:13:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:13:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:13:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:13:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:14:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:14:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:14:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:14:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:14:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:14:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:15:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:15:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:15:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:15:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:15:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:16:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:16:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:16:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:16:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.003s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:16:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:16:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:17:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:17:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:17:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:17:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:17:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:18:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:18:44 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:18:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:18:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:18:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:18:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:19:24 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:19:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.000s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:19:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.002s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:19:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" acquired by "neutron.agent.linux.external_process._check_child_processes" :: waited 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:327}}
+Jan 02 14:19:59 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_concurrency.lockutils [-] Lock "_check_child_processes" released by "neutron.agent.linux.external_process._check_child_processes" :: held 0.001s {{(pid=16479) inner /usr/local/lib/python2.7/dist-packages/oslo_concurrency/lockutils.py:339}}
+Jan 02 14:20:04 jfz1r03h11 neutron-l3-agent[16479]: DEBUG oslo_service.periodic_task [None req-b16307b5-e7d4-491c-9d87-924573a901ae None None] Running periodic task L3NATAgentWithStateReport.periodic_sync_routers_task {{(pid=16479) run_periodic_tasks /usr/local/lib/python2.7/dist-packages/oslo_service/periodic_task.py:219}}
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: WARNING pyroute2 [-] module pyroute2.ipdb.common is deprecated, use pyroute2.ipdb.exceptions instead
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ====                        Guru Meditation                         ====
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ====                            Package                             ====
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: product = None
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: vendor = None
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: version = None
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ====                            Threads                             ====
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                  Thread #140220711118592                   ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:349 in run
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.wait(sleep_time)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/poll.py:79 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `presult = self.do_poll(seconds)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/epolls.py:42 in do_poll
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.poll.poll(seconds)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ====                         Green Threads                          ====
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:642 in _process_routers_loop
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `pool.spawn_n(self._process_router_update)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:112 in spawn_n
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.sem.acquire()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/semaphore.py:115 in acquire
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `hubs.get_hub().switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/bin/neutron-l3-agent:10 in <module>
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `sys.exit(main())`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/cmd/eventlet/agents/l3.py:17 in main
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `l3_agent.main()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3_agent.py:54 in main
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `service.launch(cfg.CONF, server, restart_method='mutate').wait()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/service.py:394 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `status, signo = self._wait_for_exit_or_signal()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/service.py:372 in _wait_for_exit_or_signal
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `super(ServiceLauncher, self).wait()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/service.py:302 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.services.wait()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/service.py:776 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.tg.wait()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/threadgroup.py:169 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self._wait_threads()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/threadgroup.py:165 in _wait_threads
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `lambda x: LOG.exception('Error waiting on thread.'))`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/threadgroup.py:116 in _perform_action_on_threads
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `action_func(x)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/threadgroup.py:164 in <lambda>
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `lambda x: x.wait(),`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/threadgroup.py:57 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.thread.wait()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:180 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self._exit_event.wait()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/event.py:125 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `result = hub.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:451 in poll
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.conn.consume(timeout=current_timeout)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:1012 in consume
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `error_callback=_error_callback)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:736 in ensure
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `ret, channel = autoretry_method()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:494 in _ensured
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return fun(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:570 in __call__
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return fun(*args, channel=channels[0], **kwargs), channels[0]`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:725 in execute_method
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `method()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:997 in _consume
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.connection.drain_events(timeout=poll_timeout)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:301 in drain_events
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.transport.drain_events(self.connection, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/transport/pyamqp.py:103 in drain_events
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return connection.drain_events(**kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/connection.py:491 in drain_events
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `while not self.blocking_read(timeout):`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/connection.py:496 in blocking_read
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `frame = self.transport.read_frame()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/transport.py:243 in read_frame
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `frame_header = read(7, True)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/transport.py:418 in _read
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `s = recv(n - len(rbuf))`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:364 in recv
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self._recv_loop(self.fd.recv, b'', bufsize, flags)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:358 in _recv_loop
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self._read_trampoline()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:329 in _read_trampoline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `timeout_exc=socket_timeout('timed out'))`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:208 in _trampoline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `mark_as_closed=self._mark_as_closed)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/__init__.py:164 in trampoline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return hub.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:926 in _heartbeat_thread_job
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `timeout=self._heartbeat_wait_timeout)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_utils/eventletutils.py:171 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self._event.wait()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/event.py:125 in wait
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `result = hub.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_privsep/comm.py:128 in _reader_main
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `for msg in reader:`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/six.py:564 in next
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return type(self).__next__(self)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_privsep/comm.py:78 in __next__
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `buf = self.readsock.recv(4096)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:364 in recv
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self._recv_loop(self.fd.recv, b'', bufsize, flags)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:358 in _recv_loop
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self._read_trampoline()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:329 in _read_trampoline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `timeout_exc=socket_timeout('timed out'))`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:208 in _trampoline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `mark_as_closed=self._mark_as_closed)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/__init__.py:164 in trampoline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return hub.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_privsep/daemon.py:237 in logger
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `for line in f:`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/socket.py:534 in next
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `line = self.readline()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/socket.py:451 in readline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `data = self._sock.recv(self._rbufsize)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/py2.py:161 in recv
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `data = os.read(self._fileno, buflen)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/os.py:50 in read
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `hubs.trampoline(fd, read=True)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/__init__.py:164 in trampoline
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return hub.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py:250 in wrapper
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return infunc(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/base.py:304 in _runner
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `batch_size=self.batch_size, batch_timeout=self.batch_timeout)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/base.py:53 in wrapper
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `message = func(in_self, timeout=watch.leftover(True))`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:313 in poll
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.conn.consume(timeout=min(self._current_timeout, left))`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:1012 in consume
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `error_callback=_error_callback)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:736 in ensure
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `ret, channel = autoretry_method()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:494 in _ensured
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return fun(*args, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:570 in __call__
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return fun(*args, channel=channels[0], **kwargs), channels[0]`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:725 in execute_method
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `method()`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:997 in _consume
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `self.connection.drain_events(timeout=poll_timeout)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:301 in drain_events
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]:     `return self.transport.drain_events(self.connection, **kwargs)`
+Jan 02 14:20:30 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/transport/pyamqp.py:103 in drain_events
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return connection.drain_events(**kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/connection.py:491 in drain_events
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `while not self.blocking_read(timeout):`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/connection.py:496 in blocking_read
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `frame = self.transport.read_frame()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/transport.py:243 in read_frame
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `frame_header = read(7, True)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/transport.py:418 in _read
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `s = recv(n - len(rbuf))`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:364 in recv
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self._recv_loop(self.fd.recv, b'', bufsize, flags)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:358 in _recv_loop
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._read_trampoline()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:329 in _read_trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `timeout_exc=socket_timeout('timed out'))`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:208 in _trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `mark_as_closed=self._mark_as_closed)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/__init__.py:164 in trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_utils/excutils.py:250 in wrapper
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return infunc(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/base.py:304 in _runner
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `batch_size=self.batch_size, batch_timeout=self.batch_timeout)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/base.py:53 in wrapper
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `message = func(in_self, timeout=watch.leftover(True))`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/amqpdriver.py:313 in poll
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.conn.consume(timeout=min(self._current_timeout, left))`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:1012 in consume
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `error_callback=_error_callback)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:736 in ensure
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `ret, channel = autoretry_method()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:494 in _ensured
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return fun(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:570 in __call__
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return fun(*args, channel=channels[0], **kwargs), channels[0]`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:725 in execute_method
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `method()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_messaging/_drivers/impl_rabbit.py:997 in _consume
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.connection.drain_events(timeout=poll_timeout)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/connection.py:301 in drain_events
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.transport.drain_events(self.connection, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/kombu/transport/pyamqp.py:103 in drain_events
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return connection.drain_events(**kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/connection.py:491 in drain_events
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `while not self.blocking_read(timeout):`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/connection.py:496 in blocking_read
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `frame = self.transport.read_frame()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/transport.py:243 in read_frame
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `frame_header = read(7, True)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/amqp/transport.py:418 in _read
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `s = recv(n - len(rbuf))`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:364 in recv
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self._recv_loop(self.fd.recv, b'', bufsize, flags)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:358 in _recv_loop
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._read_trampoline()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:329 in _read_trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `timeout_exc=socket_timeout('timed out'))`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:208 in _trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `mark_as_closed=self._mark_as_closed)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/__init__.py:164 in trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/ovsdbapp/backend/ovs_idl/connection.py:99 in run
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.poller.block()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/ovs/poller.py:231 in block
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `events = self.poll.poll(self.timeout)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/ovs/poller.py:140 in poll
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `timeout)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/select.py:80 in select
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/green/thread.py:42 in __thread_body
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:774 in __bootstrap
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.__bootstrap_inner()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:801 in __bootstrap_inner
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.run()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/lib/python2.7/threading.py:754 in run
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self.__target(*self.__args, **self.__kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/ovsdbapp/event.py:113 in notify_loop
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `match, event, row, updates = self.notifications.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenpool.py:88 in _spawn_n_impl
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `func(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/agent.py:543 in _process_router_update
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `for rp, update in self._queue.each_update_to_next_resource():`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/common/resource_processing_queue.py:155 in each_update_to_next_resource
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `next_update = self._queue.get()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:322 in get
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return waiter.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/queue.py:141 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return get_hub().switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/ha.py:108 in _start_keepalived_notifications_server
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `state_change_server.run()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/l3/ha.py:74 in run
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `server.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/wsgi.py:214 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._server.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/wsgi.py:89 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._server.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:180 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self._exit_event.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/event.py:125 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/linux/external_process.py:243 in _periodic_checking_thread
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `eventlet.sleep(self._config.AGENT.check_child_processes_interval)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:36 in sleep
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/linux/external_process.py:243 in _periodic_checking_thread
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `eventlet.sleep(self._config.AGENT.check_child_processes_interval)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:36 in sleep
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /opt/stack/neutron/neutron/agent/linux/utils.py:442 in _run
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `log_format=cfg.CONF.wsgi_log_format)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/wsgi.py:954 in server
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `client_socket, client_addr = sock.accept()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:228 in accept
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._trampoline(fd, read=True, timeout=self.gettimeout(), timeout_exc=_timeout_exc)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenio/base.py:208 in _trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `mark_as_closed=self._mark_as_closed)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/__init__.py:164 in trampoline
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:180 in _run_loop
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._sleep(idle)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:134 in _sleep
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._abort.wait(timeout)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:101 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._event.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/event.py:125 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:180 in _run_loop
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._sleep(idle)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:134 in _sleep
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._abort.wait(timeout)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:101 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._event.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/event.py:125 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:180 in _run_loop
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._sleep(idle)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:134 in _sleep
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._abort.wait(timeout)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/loopingcall.py:101 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `self._event.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/event.py:125 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/greenthread.py:219 in main
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = function(*args, **kwargs)`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/oslo_service/service.py:801 in run_service
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `done.wait()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/event.py:125 in wait
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `result = hub.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: /usr/local/lib/python2.7/dist-packages/eventlet/hubs/hub.py:297 in switch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     `return self.greenlet.switch()`
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ------                        Green Thread                        ------
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: No Traceback!
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ====                           Processes                            ====
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: Process 16479 (under 1) [ run by: stack (1007), state: running ]
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     Process 20432 (under 16479) [ run by: root (0), state: sleeping ]
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     Process 20433 (under 20432) [ run by: root (0), state: sleeping ]
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ====                         Configuration                          ====
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: ========================================================================
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: AGENT:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   availability_zone = nova
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   check_child_processes_action = respawn
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   check_child_processes_interval = 60
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   comment_iptables_rules = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   debug_iptables_rules = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log_agent_heartbeats = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   report_interval = 30.0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   root_helper = sudo /usr/local/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   root_helper_daemon = sudo /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   use_helper_for_ns_read = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: OVS:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   bridge_mac_table_size = 50000
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ovsdb_connection = tcp:127.0.0.1:6640
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ovsdb_debug = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ovsdb_timeout = 10
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl_ca_cert_file = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl_cert_file = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl_key_file = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: QUOTAS:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   default_quota = -1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   quota_driver = neutron.db.quota.driver.DbQuotaDriver
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   quota_network = 100
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   quota_port = 500
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   quota_rbac_policy = 10
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   quota_security_group = 10
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   quota_security_group_rule = 100
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   quota_subnet = 100
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   track_quota_usage = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: agent:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   extensions =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: default:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   agent_down_time = 75
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   agent_mode = legacy
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   allow_bulk = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   allow_overlapping_ips = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   api_extensions_path =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   api_paste_config = api-paste.ini
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   api_workers = 18
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   auth_strategy = keystone
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   backdoor_port = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   backdoor_socket = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   backlog = 4096
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   base_mac = fa:16:3e:00:00:00
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   bind_host = 0.0.0.0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   bind_port = 9696
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   client_socket_timeout = 900
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   config-dir =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   config-file =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     /etc/neutron/l3_agent.ini
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     /etc/neutron/neutron.conf
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   config_source =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   control_exchange = neutron
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   core_plugin = ml2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   debug = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   default_availability_zones =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   default_log_levels =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     OFPHandler=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     OfctlService=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     amqp=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     amqplib=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     boto=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     dogpile.core.dogpile=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     iso8601=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     keystoneauth=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     keystonemiddleware=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     os_ken.base.app_manager=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     os_ken.controller.controller=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     oslo.cache=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     oslo.messaging=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     oslo_messaging=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     oslo_policy=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     ovsdbapp.backend.ovs_idl.vlog=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     qpid=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     requests.packages.urllib3.connectionpool=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     requests.packages.urllib3.util.retry=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     routes.middleware=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     sqlalchemy=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     stevedore=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     suds=INFO
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     taskflow=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     urllib3.connectionpool=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     urllib3.util.retry=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     websocket=WARN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   dhcp_agent_notification = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   dhcp_lease_duration = 86400
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   dhcp_load_type = networks
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   dns_domain = openstacklocal
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   enable_metadata_proxy = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   enable_new_agents = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   executor_thread_pool_size = 64
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   external_dns_driver = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   external_ingress_mark = 0x2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   external_network_bridge = br-ex
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   external_pids = /opt/stack/data/neutron/external/pids
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   fatal_deprecations = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   filter_validation = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   gateway_external_network_id =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   global_physnet_mtu = 1500
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   graceful_shutdown_timeout = 60
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ha_confs_path = /opt/stack/data/neutron/ha_confs
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ha_keepalived_state_change_server_threads = 36
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ha_vrrp_advert_int = 2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ha_vrrp_auth_password = ***
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ha_vrrp_auth_type = PASS
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ha_vrrp_health_check_interval = 0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   handle_internal_only_routers = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   host = jfz1r03h11
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   instance_format = [instance: %(uuid)s]
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   instance_uuid_format = [instance: %(uuid)s]
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   interface_driver = openvswitch
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ipam_driver = internal
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ipv6_gateway =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ipv6_pd_enabled = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log-config-append = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log-date-format = %Y-%m-%d %H:%M:%S
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log-dir = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log-file = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log_options = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log_rotate_interval = 1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log_rotate_interval_type = days
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   log_rotation_type = none
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   logging_context_format_string = %(color)s%(levelname)s %(name)s [%(global_request_id)s %(request_id)s %(project_name)s %(user_name)s%(color)s] %(instance)s%(color)s%(message)s
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   logging_debug_format_suffix = {{(pid=%(process)d) %(funcName)s %(pathname)s:%(lineno)d}}
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   logging_default_format_string = %(color)s%(levelname)s %(name)s [-%(color)s] %(instance)s%(color)s%(message)s
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   logging_exception_prefix = ERROR %(name)s %(instance)s
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   logging_user_identity_format = %(user)s %(tenant)s %(domain)s %(user_domain)s %(project_domain)s
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   max_dns_nameservers = 5
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   max_header_line = 16384
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   max_logfile_count = 30
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   max_logfile_size_mb = 200
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   max_rtr_adv_interval = 100
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   max_subnet_host_routes = 20
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   metadata_access_mark = 0x1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   metadata_port = 9697
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   metadata_proxy_group =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   metadata_proxy_socket = /opt/stack/data/neutron/metadata_proxy
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   metadata_proxy_user =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   min_rtr_adv_interval = 30
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   network_link_prefix = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   notify_nova_on_port_data_changes = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   notify_nova_on_port_status_changes = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ovs_integration_bridge = br-int
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ovs_use_veth = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   pagination_max_limit = -1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   pd_confs = /opt/stack/data/neutron/pd
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   periodic_fuzzy_delay = 5
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   periodic_interval = 40
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   prefix_delegation_driver = dibbler
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   publish_errors = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ra_confs = /opt/stack/data/neutron/ra
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rate_limit_burst = 0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rate_limit_except_level = CRITICAL
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rate_limit_interval = 0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   retry_until_window = 30
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rpc_response_timeout = 60
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rpc_state_report_workers = 0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rpc_workers = 1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   run_external_periodic_tasks = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   send_events_interval = 2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   service_plugins =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     neutron.services.l3_router.l3_router_plugin.L3RouterPlugin
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     taas
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   state_path = /opt/stack/data/neutron
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   syslog-log-facility = LOG_USER
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   tcp_keepidle = 600
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   transport_url = ***
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   use-journal = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   use-json = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   use-syslog = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   use_eventlog = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   use_ssl = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   use_stderr = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   vendor_pen = 8888
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   vlan_transparent = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   watch-log-file = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   wsgi_default_pool_size = 100
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   wsgi_keep_alive = True
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   wsgi_log_format = %(client_ip)s "%(request_line)s" status: %(status_code)s  len: %(body_length)s time: %(wall_seconds).7f
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: nova:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   auth_section = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   auth_type = password
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   cafile = /opt/stack/data/ca-bundle.pem
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   certfile = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   collect-timing = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   endpoint_type = public
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   insecure = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   keyfile = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   region_name = RegionOne
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   split-loggers = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   timeout = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: oslo_concurrency:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   disable_process_locking = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   lock_path = /opt/stack/data/neutron/lock
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: oslo_messaging_notifications:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   driver =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   retry = -1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   topics =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     notifications
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   transport_url = ***
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: oslo_messaging_rabbit:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   amqp_auto_delete = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   amqp_durable_queues = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   conn_pool_min_size = 2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   conn_pool_ttl = 1200
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   heartbeat_rate = 2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   heartbeat_timeout_threshold = 60
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   kombu_compression = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   kombu_failover_strategy = round-robin
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   kombu_missing_consumer_retry_timeout = 60
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   kombu_reconnect_delay = 1.0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rabbit_ha_queues = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rabbit_interval_max = 30
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rabbit_login_method = AMQPLAIN
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rabbit_qos_prefetch_count = 0
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rabbit_retry_backoff = 2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rabbit_retry_interval = 1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rabbit_transient_queues_ttl = 1800
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   rpc_conn_pool_size = 30
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl_ca_file =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl_cert_file =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl_key_file =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   ssl_version =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: oslo_versionedobjects:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   fatal_exception_format_errors = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: placement:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   auth_section = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   auth_type = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   cafile = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   certfile = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   collect-timing = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   endpoint_type = public
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   insecure = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   keyfile = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   region_name = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   split-loggers = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   timeout = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: privsep:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   capabilities =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     12
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     2
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:     21
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   group = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   helper_command = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   user = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: profiler:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   connection_string = messaging://
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   enabled = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   es_doc_type = notification
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   es_scroll_size = 10000
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   es_scroll_time = 2m
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   filter_error_trace = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   hmac_keys = SECRET_KEY
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   sentinel_service_name = mymaster
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   socket_timeout = 0.1
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   trace_sqlalchemy = False
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: service_providers:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   service_provider =
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]: xenapi:
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   connection_password = ***
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   connection_url = None
+Jan 02 14:20:31 jfz1r03h11 neutron-l3-agent[16479]:   connection_username = None

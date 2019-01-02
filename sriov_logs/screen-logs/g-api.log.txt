@@ -1,0 +1,2 @@
+-- Logs begin at Wed 2019-01-02 13:59:50 PST, end at Wed 2019-01-02 14:20:39 PST. --
+Jan 02 14:19:27 jfz1r03h11 systemd[1]: Started Devstack devstack@g-api.service.

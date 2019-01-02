@@ -1,0 +1,14 @@
+2019-01-02 20:08:37.187 | stack.sh log /opt/stack/logs/stack.sh.log.2019-01-02-120837
+2019-01-02 20:08:40.748 | Installing package prerequisites
+2019-01-02 20:09:32.643 | Starting RabbitMQ
+2019-01-02 20:09:48.104 | Installing OpenStack project source
+2019-01-02 20:13:25.681 | Installing Tempest
+2019-01-02 20:14:14.921 | Configuring and starting MySQL
+2019-01-02 20:14:22.997 | Starting Keystone
+2019-01-02 20:17:34.895 | Configuring Horizon
+2019-01-02 20:18:12.440 | Configuring Glance
+2019-01-02 20:18:17.821 | Configuring Neutron
+2019-01-02 20:18:46.068 | Configuring Cinder
+2019-01-02 20:18:50.493 | Configuring placement
+2019-01-02 20:19:11.386 | Configuring Nova
+2019-01-02 20:19:51.257 | Starting Glance

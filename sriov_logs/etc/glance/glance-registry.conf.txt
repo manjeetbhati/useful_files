@@ -1,0 +1,33 @@
+
+[DEFAULT]
+logging_exception_prefix = ERROR %(name)s [01;35m%(instance)s[00m
+logging_default_format_string = %(color)s%(levelname)s %(name)s [[00;36m-%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
+logging_context_format_string = %(color)s%(levelname)s %(name)s [[01;36m%(global_request_id)s %(request_id)s [00;36m%(project_name)s %(user_name)s%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
+logging_debug_format_suffix = [00;33m{{(pid=%(process)d) %(funcName)s %(pathname)s:%(lineno)d}}[00m
+graceful_shutdown_timeout = 5
+transport_url = rabbit://stackrabbit:devstack@172.16.3.11:5672/
+use_syslog = False
+workers = 18
+bind_host = 0.0.0.0
+debug = True
+
+[database]
+connection = mysql+pymysql://root:devstack@127.0.0.1/glance?charset=utf8
+
+[paste_deploy]
+flavor = keystone
+
+[keystone_authtoken]
+memcached_servers = localhost:11211
+signing_dir = /var/cache/glance/registry
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = devstack
+username = glance
+auth_url = http://172.16.3.11/identity
+auth_type = password
+
+[oslo_messaging_notifications]
+driver = messagingv2

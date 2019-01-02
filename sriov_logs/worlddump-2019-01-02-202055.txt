@@ -1,0 +1,1796 @@
+
+File System Summary
+===================
+
+Filesystem                       Size  Used Avail Use% Mounted on
+udev                             126G     0  126G   0% /dev
+tmpfs                             26G  2.6G   23G  10% /run
+/dev/mapper/jfz1r03h11--vg-root  439G  8.0G  409G   2% /
+tmpfs                            126G     0  126G   0% /dev/shm
+tmpfs                            5.0M     0  5.0M   0% /run/lock
+tmpfs                            126G     0  126G   0% /sys/fs/cgroup
+/dev/sda1                        472M   58M  390M  13% /boot
+tmpfs                             26G     0   26G   0% /run/user/1007
+tmpfs                             26G     0   26G   0% /run/user/1006
+
+
+Process Listing
+===============
+
+ps axo user,ppid,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,args
+---------------------------------------------------------------
+
+USER       PPID    PID %CPU %MEM    VSZ   RSS TT       STAT  STARTED     TIME COMMAND
+root          0      1  0.0  0.0  38744  6724 ?        Ss     Dec 21 00:02:34 /sbin/init
+root          0      2  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [kthreadd]
+root          2      3  0.0  0.0      0     0 ?        S      Dec 21 00:00:19 [ksoftirqd/0]
+root          2      5  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/0:0H]
+root          2      8  0.0  0.0      0     0 ?        S      Dec 21 00:14:45 [rcu_sched]
+root          2      9  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [rcu_bh]
+root          2     10  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/0]
+root          2     11  0.0  0.0      0     0 ?        S      Dec 21 00:00:03 [watchdog/0]
+root          2     12  0.0  0.0      0     0 ?        S      Dec 21 00:00:03 [watchdog/1]
+root          2     13  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [migration/1]
+root          2     14  0.0  0.0      0     0 ?        S      Dec 21 00:00:10 [ksoftirqd/1]
+root          2     16  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/1:0H]
+root          2     17  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/2]
+root          2     18  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [migration/2]
+root          2     19  0.0  0.0      0     0 ?        S      Dec 21 00:00:12 [ksoftirqd/2]
+root          2     21  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/2:0H]
+root          2     22  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/3]
+root          2     23  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/3]
+root          2     24  0.0  0.0      0     0 ?        S      Dec 21 00:00:13 [ksoftirqd/3]
+root          2     26  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/3:0H]
+root          2     27  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/4]
+root          2     28  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/4]
+root          2     29  0.0  0.0      0     0 ?        S      Dec 21 00:00:12 [ksoftirqd/4]
+root          2     31  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/4:0H]
+root          2     32  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/5]
+root          2     33  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/5]
+root          2     34  0.0  0.0      0     0 ?        S      Dec 21 00:00:14 [ksoftirqd/5]
+root          2     36  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/5:0H]
+root          2     37  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/6]
+root          2     38  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/6]
+root          2     39  0.0  0.0      0     0 ?        S      Dec 21 00:00:14 [ksoftirqd/6]
+root          2     41  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/6:0H]
+root          2     42  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/7]
+root          2     43  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/7]
+root          2     44  0.0  0.0      0     0 ?        S      Dec 21 00:00:15 [ksoftirqd/7]
+root          2     46  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/7:0H]
+root          2     47  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/8]
+root          2     48  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/8]
+root          2     49  0.0  0.0      0     0 ?        S      Dec 21 00:00:13 [ksoftirqd/8]
+root          2     51  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/8:0H]
+root          2     52  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/9]
+root          2     53  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/9]
+root          2     54  0.0  0.0      0     0 ?        S      Dec 21 00:00:12 [ksoftirqd/9]
+root          2     56  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/9:0H]
+root          2     57  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/10]
+root          2     58  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/10]
+root          2     59  0.0  0.0      0     0 ?        S      Dec 21 00:00:14 [ksoftirqd/10]
+root          2     61  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/10:0H]
+root          2     62  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/11]
+root          2     63  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/11]
+root          2     64  0.0  0.0      0     0 ?        S      Dec 21 00:00:13 [ksoftirqd/11]
+root          2     66  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/11:0H]
+root          2     67  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/12]
+root          2     68  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/12]
+root          2     69  0.0  0.0      0     0 ?        S      Dec 21 00:00:10 [ksoftirqd/12]
+root          2     71  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/12:0H]
+root          2     72  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/13]
+root          2     73  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/13]
+root          2     74  0.0  0.0      0     0 ?        S      Dec 21 00:00:10 [ksoftirqd/13]
+root          2     76  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/13:0H]
+root          2     77  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/14]
+root          2     78  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/14]
+root          2     79  0.0  0.0      0     0 ?        S      Dec 21 00:00:09 [ksoftirqd/14]
+root          2     81  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/14:0H]
+root          2     82  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/15]
+root          2     83  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/15]
+root          2     84  0.0  0.0      0     0 ?        S      Dec 21 00:00:09 [ksoftirqd/15]
+root          2     86  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/15:0H]
+root          2     87  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/16]
+root          2     88  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/16]
+root          2     89  0.0  0.0      0     0 ?        S      Dec 21 00:00:09 [ksoftirqd/16]
+root          2     91  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/16:0H]
+root          2     92  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/17]
+root          2     93  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/17]
+root          2     94  0.0  0.0      0     0 ?        S      Dec 21 00:00:10 [ksoftirqd/17]
+root          2     96  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/17:0H]
+root          2     97  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/18]
+root          2     98  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/18]
+root          2     99  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [ksoftirqd/18]
+root          2    101  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/18:0H]
+root          2    103  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/19]
+root          2    104  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/19]
+root          2    105  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/19]
+root          2    107  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/19:0H]
+root          2    108  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/20]
+root          2    109  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/20]
+root          2    110  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/20]
+root          2    112  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/20:0H]
+root          2    113  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/21]
+root          2    114  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/21]
+root          2    115  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/21]
+root          2    117  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/21:0H]
+root          2    118  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/22]
+root          2    119  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/22]
+root          2    120  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/22]
+root          2    122  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/22:0H]
+root          2    123  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/23]
+root          2    124  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/23]
+root          2    125  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/23]
+root          2    127  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/23:0H]
+root          2    128  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/24]
+root          2    129  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/24]
+root          2    130  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/24]
+root          2    132  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/24:0H]
+root          2    133  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/25]
+root          2    134  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/25]
+root          2    135  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/25]
+root          2    137  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/25:0H]
+root          2    138  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/26]
+root          2    139  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/26]
+root          2    140  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/26]
+root          2    142  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/26:0H]
+root          2    143  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/27]
+root          2    144  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/27]
+root          2    145  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/27]
+root          2    147  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/27:0H]
+root          2    148  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/28]
+root          2    149  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/28]
+root          2    150  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/28]
+root          2    152  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/28:0H]
+root          2    153  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/29]
+root          2    154  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/29]
+root          2    155  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/29]
+root          2    157  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/29:0H]
+root          2    158  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/30]
+root          2    159  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/30]
+root          2    160  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/30]
+root          2    162  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/30:0H]
+root          2    163  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/31]
+root          2    164  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/31]
+root          2    165  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/31]
+root          2    167  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/31:0H]
+root          2    168  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/32]
+root          2    169  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/32]
+root          2    170  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/32]
+root          2    172  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/32:0H]
+root          2    173  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/33]
+root          2    174  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/33]
+root          2    175  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/33]
+root          2    177  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/33:0H]
+root          2    178  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/34]
+root          2    179  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/34]
+root          2    180  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/34]
+root          2    182  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/34:0H]
+root          2    183  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/35]
+root          2    184  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/35]
+root          2    185  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/35]
+root          2    187  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/35:0H]
+root          2    188  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/36]
+root          2    189  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/36]
+root          2    190  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/36]
+root          2    192  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/36:0H]
+root          2    193  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/37]
+root          2    194  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/37]
+root          2    195  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/37]
+root          2    197  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/37:0H]
+root          2    198  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/38]
+root          2    199  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/38]
+root          2    200  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/38]
+root          2    202  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/38:0H]
+root          2    203  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/39]
+root          2    204  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/39]
+root          2    205  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/39]
+root          2    207  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/39:0H]
+root          2    208  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/40]
+root          2    209  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/40]
+root          2    210  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/40]
+root          2    212  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/40:0H]
+root          2    213  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/41]
+root          2    214  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/41]
+root          2    215  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/41]
+root          2    217  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/41:0H]
+root          2    218  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/42]
+root          2    219  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/42]
+root          2    220  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/42]
+root          2    222  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/42:0H]
+root          2    223  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/43]
+root          2    224  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/43]
+root          2    225  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/43]
+root          2    227  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/43:0H]
+root          2    228  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/44]
+root          2    229  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/44]
+root          2    230  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/44]
+root          2    232  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/44:0H]
+root          2    233  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/45]
+root          2    234  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/45]
+root          2    235  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/45]
+root          2    237  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/45:0H]
+root          2    238  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/46]
+root          2    239  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/46]
+root          2    240  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/46]
+root          2    242  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/46:0H]
+root          2    243  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/47]
+root          2    244  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/47]
+root          2    245  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/47]
+root          2    247  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/47:0H]
+root          2    248  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/48]
+root          2    249  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/48]
+root          2    250  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/48]
+root          2    252  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/48:0H]
+root          2    253  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/49]
+root          2    254  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/49]
+root          2    255  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/49]
+root          2    257  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/49:0H]
+root          2    258  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/50]
+root          2    259  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/50]
+root          2    260  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/50]
+root          2    262  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/50:0H]
+root          2    263  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/51]
+root          2    264  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/51]
+root          2    265  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/51]
+root          2    267  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/51:0H]
+root          2    268  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/52]
+root          2    269  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/52]
+root          2    270  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/52]
+root          2    272  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/52:0H]
+root          2    273  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/53]
+root          2    274  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/53]
+root          2    275  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/53]
+root          2    277  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/53:0H]
+root          2    278  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/54]
+root          2    279  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/54]
+root          2    280  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/54]
+root          2    282  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/54:0H]
+root          2    283  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/55]
+root          2    284  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/55]
+root          2    285  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/55]
+root          2    287  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/55:0H]
+root          2    288  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/56]
+root          2    289  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/56]
+root          2    290  0.0  0.0      0     0 ?        S      Dec 21 00:00:01 [ksoftirqd/56]
+root          2    292  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/56:0H]
+root          2    293  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/57]
+root          2    294  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/57]
+root          2    295  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/57]
+root          2    297  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/57:0H]
+root          2    298  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/58]
+root          2    299  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/58]
+root          2    300  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/58]
+root          2    302  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/58:0H]
+root          2    303  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/59]
+root          2    304  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/59]
+root          2    305  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/59]
+root          2    307  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/59:0H]
+root          2    308  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/60]
+root          2    309  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/60]
+root          2    310  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/60]
+root          2    312  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/60:0H]
+root          2    313  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/61]
+root          2    314  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/61]
+root          2    315  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/61]
+root          2    317  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/61:0H]
+root          2    318  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/62]
+root          2    319  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/62]
+root          2    320  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/62]
+root          2    322  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/62:0H]
+root          2    323  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/63]
+root          2    324  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/63]
+root          2    325  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/63]
+root          2    327  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/63:0H]
+root          2    328  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/64]
+root          2    329  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/64]
+root          2    330  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/64]
+root          2    332  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/64:0H]
+root          2    333  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/65]
+root          2    334  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/65]
+root          2    335  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/65]
+root          2    337  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/65:0H]
+root          2    338  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/66]
+root          2    339  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/66]
+root          2    340  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/66]
+root          2    342  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/66:0H]
+root          2    343  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/67]
+root          2    344  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/67]
+root          2    345  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/67]
+root          2    347  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/67:0H]
+root          2    348  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/68]
+root          2    349  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/68]
+root          2    350  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/68]
+root          2    352  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/68:0H]
+root          2    353  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/69]
+root          2    354  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/69]
+root          2    355  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/69]
+root          2    357  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/69:0H]
+root          2    358  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/70]
+root          2    359  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/70]
+root          2    360  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/70]
+root          2    362  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/70:0H]
+root          2    363  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [watchdog/71]
+root          2    364  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [migration/71]
+root          2    365  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ksoftirqd/71]
+root          2    367  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/71:0H]
+root          2    368  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [kdevtmpfs]
+root          2    369  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [netns]
+root          2    370  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [perf]
+root          2    371  0.0  0.0      0     0 ?        S      Dec 21 00:00:02 [khungtaskd]
+root          2    372  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [writeback]
+root          2    373  0.0  0.0      0     0 ?        SN     Dec 21 00:03:59 [ksmd]
+root          2    374  0.0  0.0      0     0 ?        SN     Dec 21 00:00:40 [khugepaged]
+root          2    375  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [crypto]
+root          2    376  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kintegrityd]
+root          2    377  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    378  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kblockd]
+root          2    380  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ata_sff]
+root          2    381  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [md]
+root          2    382  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [devfreq_wq]
+root          2    386  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [kswapd0]
+root          2    387  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [kswapd1]
+root          2    388  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [vmstat]
+root          2    389  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [fsnotify_mark]
+root          2    390  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [ecryptfs-kthrea]
+root          2    406  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kthrotld]
+root          2    408  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [acpi_thermal_pm]
+root          2    409  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    410  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    411  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    412  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    413  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    414  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    415  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    416  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    429  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ipv6_addrconf]
+root          2    442  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [deferwq]
+root          2    444  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [charger_manager]
+root          2    500  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [kworker/64:1]
+root          2    555  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_0]
+root          2    556  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_0]
+root          2    557  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_1]
+root          2    558  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_1]
+root          2    559  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_2]
+root          2    560  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_2]
+root          2    561  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_3]
+root          2    562  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_3]
+root          2    699  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_4]
+root          2    700  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_4]
+root          2    701  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_5]
+root          2    702  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_5]
+root          2    703  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_6]
+root          2    704  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_6]
+root          2    705  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_7]
+root          2    706  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_7]
+root          2    707  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_8]
+root          2    708  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_8]
+root          2    709  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [scsi_eh_9]
+root          2    710  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [scsi_tmf_9]
+root          2    725  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [i40e]
+root          2    726  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ixgbe]
+stack         1    733  0.0  0.0  37636  2164 ?        Ss     Dec 28 00:00:08 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/0588339e-590a-4968-a8e2-55947cc514cb.conf
+root          2    747  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    748  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    750  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    752  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    824  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/36:1H]
+root          2    825  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/5:1H]
+root          2    827  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/4:1H]
+root          2    832  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [raid5wq]
+root          2    857  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kdmflush]
+root          2    859  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    867  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kdmflush]
+root          2    869  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    879  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [bioset]
+root          2    908  0.0  0.0      0     0 ?        S<     Dec 21 00:00:22 [kworker/0:1H]
+root          2    912  0.0  0.0      0     0 ?        S      Dec 21 00:02:18 [jbd2/dm-0-8]
+root          2    913  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ext4-rsv-conver]
+root          2    957  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/7:1H]
+root          2    964  0.0  0.0      0     0 ?        S      Dec 21 00:00:00 [kauditd]
+root          2    971  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [iscsi_eh]
+root          2    977  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ib_addr]
+root          2    981  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ib_mcast]
+root          2    982  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ib_nl_sa_wq]
+root          2    983  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ib_cm]
+root          2    986  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [iw_cm_wq]
+root          2    987  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [rdma_cm]
+root          2    996  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/65:1H]
+root          2   1015  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/67:1]
+root          1   1026  0.0  0.0 250432  2040 ?        Ss     Dec 21 00:00:13 /sbin/lvmetad -f
+stack         1   1041  0.0  0.0  37636  3104 ?        Ss     Dec 27 00:00:11 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/93ee9554-1cbd-4db6-bc87-45866a3bd120.conf
+root          1   1050  0.0  0.0  44824  4224 ?        Ss     Dec 21 00:00:05 /lib/systemd/systemd-udevd
+root          2   1283  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [edac-poller]
+root          2   1293  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/70:1H]
+root          2   1374  0.0  0.0      0     0 ?        SN     Dec 21 00:00:00 [kipmi0]
+root          2   1531  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kvm-irqfd-clean]
+root          2   1627  0.0  0.0      0     0 ?        S      Dec 28 00:00:01 [kworker/54:2]
+root          2   1743  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [ext4-rsv-conver]
+systemd+      1   1854  0.0  0.0 100324  2580 ?        Ssl    Dec 21 00:00:01 /lib/systemd/systemd-timesyncd
+syslog        1   2003  0.0  0.0 256392  4384 ?        Ssl    Dec 21 00:08:35 /usr/sbin/rsyslogd -n
+message+      1   2005  0.0  0.0  42900  3816 ?        Ss     Dec 21 00:00:44 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+daemon        1   2010  0.0  0.0  26044  2188 ?        Ss     Dec 21 00:00:00 /usr/sbin/atd -f
+root          1   2029  0.0  0.0   4396  1300 ?        Ss     Dec 21 00:00:00 /usr/sbin/acpid
+root          1   2034  0.0  0.0 160904  1448 ?        Ssl    Dec 21 00:00:00 /usr/bin/lxcfs /var/lib/lxcfs/
+root          1   2041  0.0  0.0  28996  3580 ?        Ss     Dec 21 00:00:15 /lib/systemd/systemd-logind
+root          1   2048  0.0  0.0  29008  3004 ?        Ss     Dec 21 00:00:00 /usr/sbin/cron -f
+root          1   2052  0.0  0.0 1534228 40476 ?       Ssl    Dec 21 00:01:56 /usr/lib/snapd/snapd
+root          1   2142  0.0  0.0  13372   156 ?        Ss     Dec 21 00:00:00 /sbin/mdadm --monitor --pid-file /run/mdadm/monitor.pid --daemonise --scan --syslog
+root          2   2150  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/24:1H]
+root          2   2152  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/61:0]
+root          2   2303  0.0  0.0      0     0 ?        S<   11:50:03 00:00:00 [loop0]
+root          2   2499  0.0  0.0      0     0 ?        S<   11:50:03 00:00:00 [loop1]
+root          2   2535  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/22:1H]
+root          2   2536  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/23:1H]
+root          1   2564  0.0  0.0  65512  6252 ?        Ss     Dec 21 00:00:00 /usr/sbin/sshd -D
+root          1   2567  0.0  0.0   4224   724 ?        Ss     Dec 21 00:00:00 /usr/sbin/haproxy-systemd-wrapper -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
+haproxy    2567   2574  0.0  0.0  37692  5272 ?        S      Dec 21 00:00:00 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
+haproxy    2574   2576  0.0  0.0  37692  2248 ?        Ss     Dec 21 00:00:18 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
+root          1   2577  0.0  0.0   5220  1688 ?        Ss     Dec 21 00:00:15 /sbin/iscsid
+root          1   2579  0.0  0.0  14220  4000 ?        S<Ls   Dec 21 00:01:26 /sbin/iscsid
+root          1   2679  0.0  0.0  15936  1828 tty1     Ss+    Dec 21 00:00:00 /sbin/agetty --noclear tty1 linux
+root          2   2933  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/56:1H]
+root          2   2934  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/9:1H]
+root          2   2935  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/19:1H]
+root          2   2937  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/33:1H]
+root          2   2945  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/51:1H]
+root          2   2954  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/49:1H]
+root          2   2962  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/45:1H]
+root          2   3077  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/26:1H]
+root          2   3099  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/55:1H]
+root          2   3564  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/39:1]
+root          2   5879  0.0  0.0      0     0 ?        S      Dec 27 00:00:01 [kworker/42:0]
+root          2   7301  0.0  0.0      0     0 ?        S<     Dec 21 00:00:01 [kworker/1:1H]
+stack         1   9585  1.3  0.0 267772 129376 ?       Ss   11:51:05 00:00:24 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+root          2   9653  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/39:1H]
+root          2   9656  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/63:1H]
+root          2   9659  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/6:1H]
+stack         1  10302  0.0  0.0  96528 13808 ?        Ss   11:51:06 00:00:00 glance-apiuWSGI master
+root          2  10303  0.0  0.0      0     0 ?        S    11:51:06 00:00:00 [kworker/53:2]
+stack     10302  10306  0.0  0.0 315868 145292 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 1
+stack     10302  10307  0.0  0.0 315872 145268 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 2
+stack     10302  10308  0.0  0.0 317152 146512 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 3
+stack     10302  10309  0.0  0.0 317408 146684 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 4
+stack     10302  10310  0.0  0.0 317404 146640 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 5
+stack     10302  10311  0.0  0.0 317152 146496 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 6
+stack     10302  10313  0.1  0.0 391652 147204 ?       Sl   11:51:06 00:00:03 glance-apiuWSGI worker 7
+stack     10302  10314  0.0  0.0 316128 145396 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 8
+stack     10302  10315  0.0  0.0 315104 144536 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 9
+stack     10302  10316  0.0  0.0 317408 146748 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 10
+stack     10302  10317  0.1  0.0 391140 146780 ?       Sl   11:51:06 00:00:02 glance-apiuWSGI worker 11
+stack     10302  10318  0.0  0.0 317408 146656 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 12
+stack     10302  10320  0.1  0.0 391652 147140 ?       Sl   11:51:06 00:00:03 glance-apiuWSGI worker 13
+stack     10302  10321  0.0  0.0 317148 146432 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 14
+stack     10302  10322  0.0  0.0 315104 144540 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 15
+stack     10302  10323  0.2  0.0 391780 148908 ?       Sl   11:51:06 00:00:04 glance-apiuWSGI worker 16
+stack     10302  10324  0.0  0.0 316128 145264 ?       S    11:51:06 00:00:01 glance-apiuWSGI worker 17
+stack     10302  10325  0.1  0.0 391396 146896 ?       Sl   11:51:06 00:00:03 glance-apiuWSGI worker 18
+root          2  10427  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/30:1H]
+stack      9585  10430  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10432  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10435  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10438  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10440  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10443  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10446  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10448  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10452  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10457  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10458  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10459  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10460  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10461  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10462  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10463  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10464  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+stack      9585  10465  0.0  0.0 267772 120036 ?       S    11:51:06 00:00:00 /usr/bin/python /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+root          2  10624  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/2:1H]
+root          2  10652  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/29:1H]
+root          2  10971  0.0  0.0      0     0 ?        S    11:53:31 00:00:01 [kworker/u385:3]
+root          2  11893  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/64:0]
+root          2  11961  0.0  0.0      0     0 ?        S      Dec 27 00:00:01 [kworker/52:0]
+stack         1  12170  0.0  0.0  96528 13776 ?        Ss   11:53:40 00:00:00 nova-apiuWSGI master
+root          2  12171  0.0  0.0      0     0 ?        S    11:53:40 00:00:00 [kworker/11:2]
+stack     12170  12174  0.5  0.0 351192 150620 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 1
+stack     12170  12175  0.5  0.0 351264 150688 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 2
+stack     12170  12176  0.5  0.0 349860 149012 ?       S    11:53:40 00:00:09 nova-apiuWSGI worker 3
+stack     12170  12177  0.5  0.0 350420 149644 ?       S    11:53:40 00:00:09 nova-apiuWSGI worker 4
+stack     12170  12178  0.5  0.0 351540 150996 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 5
+stack     12170  12179  0.5  0.0 350660 149944 ?       S    11:53:40 00:00:09 nova-apiuWSGI worker 6
+stack     12170  12180  0.5  0.0 350508 149696 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 7
+stack     12170  12181  0.5  0.0 353568 152876 ?       S    11:53:40 00:00:09 nova-apiuWSGI worker 8
+stack     12170  12182  0.5  0.0 350404 149616 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 9
+stack     12170  12183  0.5  0.0 349244 148260 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 10
+stack     12170  12184  0.5  0.0 351800 151004 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 11
+stack     12170  12185  0.5  0.0 348992 148460 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 12
+stack     12170  12186  0.5  0.0 350604 149984 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 13
+stack     12170  12187  0.5  0.0 351652 150984 ?       S    11:53:40 00:00:09 nova-apiuWSGI worker 14
+stack     12170  12188  0.5  0.0 350580 150012 ?       S    11:53:40 00:00:09 nova-apiuWSGI worker 15
+stack     12170  12189  0.5  0.0 349836 149200 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 16
+stack     12170  12190  0.5  0.0 349476 148808 ?       S    11:53:40 00:00:09 nova-apiuWSGI worker 17
+stack     12170  12191  0.5  0.0 352788 152104 ?       S    11:53:40 00:00:08 nova-apiuWSGI worker 18
+root          2  12316  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/40:1H]
+root          2  13366  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/59:1H]
+stack         1  13393  0.1  0.0 293508 126944 ?       Ss   11:53:49 00:00:03 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+root          2  13394  0.0  0.0      0     0 ?        S    11:53:49 00:00:00 [kworker/61:2]
+stack     13393  13577  0.2  0.0 311172 135152 ?       S    11:53:51 00:00:03 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13578  0.2  0.0 312048 135808 ?       S    11:53:51 00:00:03 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13579  0.0  0.0 298240 122264 ?       S    11:53:51 00:00:00 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13580  0.0  0.0 292596 114772 ?       S    11:53:51 00:00:00 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13581  0.3  0.0 321216 145220 ?       S    11:53:51 00:00:04 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13582  0.5  0.0 332300 156152 ?       S    11:53:51 00:00:08 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13583  0.3  0.0 314840 138704 ?       S    11:53:51 00:00:05 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13584  0.0  0.0 298960 122784 ?       S    11:53:51 00:00:01 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13585  0.4  0.0 316480 140496 ?       S    11:53:51 00:00:06 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13586  0.1  0.0 310996 134960 ?       S    11:53:51 00:00:02 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13587  0.9  0.0 332372 156228 ?       S    11:53:51 00:00:14 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13588  1.0  0.0 326868 150776 ?       S    11:53:51 00:00:16 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13589  0.0  0.0 299812 123824 ?       S    11:53:51 00:00:01 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13590  0.4  0.0 329600 153360 ?       S    11:53:51 00:00:07 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13591  0.2  0.0 310736 134648 ?       S    11:53:51 00:00:03 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13592  0.0  0.0 298284 122308 ?       S    11:53:51 00:00:01 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13593  1.3  0.0 338708 162712 ?       S    11:53:51 00:00:21 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13594  0.2  0.0 317272 141284 ?       S    11:53:51 00:00:04 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13595  3.4  0.0 328600 152356 ?       S    11:53:51 00:00:56 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+stack     13393  13596  0.9  0.0 320512 144268 ?       S    11:53:51 00:00:15 /usr/bin/python /usr/local/bin/neutron-server --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --config-file /etc/neutron/taas_plugin.ini --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+root          2  14344  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/8:1H]
+stack         1  14363  0.0  0.0  96528 13832 ?        Ss   11:53:53 00:00:00 placementuWSGI master
+root          2  14365  0.0  0.0      0     0 ?        S    11:53:53 00:00:00 [kworker/22:2]
+stack     14363  14367  0.0  0.0 228780 81496 ?        S    11:53:53 00:00:01 placementuWSGI worker 1
+stack     14363  14368  0.0  0.0 227756 80488 ?        S    11:53:53 00:00:01 placementuWSGI worker 2
+stack     14363  14369  0.0  0.0 228776 81680 ?        S    11:53:53 00:00:01 placementuWSGI worker 3
+stack     14363  14370  0.0  0.0 228520 81268 ?        S    11:53:53 00:00:01 placementuWSGI worker 4
+stack     14363  14371  0.0  0.0 228520 81308 ?        S    11:53:53 00:00:01 placementuWSGI worker 5
+stack     14363  14373  0.0  0.0 228776 81548 ?        S    11:53:53 00:00:01 placementuWSGI worker 6
+stack     14363  14374  0.0  0.0 229052 81844 ?        S    11:53:53 00:00:01 placementuWSGI worker 7
+stack     14363  14375  0.1  0.0 228776 81424 ?        S    11:53:53 00:00:01 placementuWSGI worker 8
+stack     14363  14376  0.0  0.0 228776 81488 ?        S    11:53:53 00:00:01 placementuWSGI worker 9
+stack     14363  14377  0.0  0.0 228776 81660 ?        S    11:53:53 00:00:01 placementuWSGI worker 10
+stack     14363  14378  0.0  0.0 228520 81316 ?        S    11:53:53 00:00:01 placementuWSGI worker 11
+stack     14363  14379  0.0  0.0 229032 81788 ?        S    11:53:53 00:00:01 placementuWSGI worker 12
+stack     14363  14380  0.0  0.0 228776 81772 ?        S    11:53:53 00:00:01 placementuWSGI worker 13
+stack     14363  14381  0.0  0.0 228008 80784 ?        S    11:53:53 00:00:01 placementuWSGI worker 14
+stack     14363  14382  0.0  0.0 227752 80696 ?        S    11:53:53 00:00:01 placementuWSGI worker 15
+stack     14363  14383  0.0  0.0 228264 81000 ?        S    11:53:53 00:00:01 placementuWSGI worker 16
+stack     14363  14384  0.0  0.0 227752 80612 ?        S    11:53:53 00:00:01 placementuWSGI worker 17
+stack     14363  14385  0.0  0.0 229032 81692 ?        S    11:53:53 00:00:01 placementuWSGI worker 18
+stack         1  15214  1.2  0.0 297632 133600 ?       Ss   11:53:55 00:00:19 /usr/bin/python /usr/local/bin/neutron-openvswitch-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini
+root          2  15216  0.0  0.0      0     0 ?        S    11:53:55 00:00:00 [kworker/65:0]
+root          2  15790  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/20:1H]
+root          2  15791  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/18:1H]
+root          2  15792  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/21:1H]
+stack         1  15804  2.4  0.0 277308 113724 ?       Ss   11:53:56 00:00:40 /usr/bin/python /usr/local/bin/neutron-dhcp-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/dhcp_agent.ini
+root          2  15847  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/35:1H]
+root          2  15857  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/25:1H]
+root          2  15876  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/27:1H]
+root          2  15904  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/3:1H]
+root          2  16364  0.0  0.0      0     0 ?        S<     Dec 27 00:00:00 [i40evf]
+stack         1  16479  0.4  0.0 284508 115484 ?       Ss   11:53:57 00:00:07 /usr/bin/python /usr/local/bin/neutron-l3-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/l3_agent.ini
+root          1  16674  0.0  0.0 189896 46600 ?        S    11:53:58 00:00:00 /usr/bin/python /usr/local/bin/privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --privsep_context neutron.privileged.default --privsep_sock_path /tmp/tmpDQjihg/privsep.sock
+stack         1  17135  0.1  0.0 266192 103696 ?       Ss   11:53:58 00:00:02 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+root          2  17186  0.0  0.0      0     0 ?        S    11:53:58 00:00:00 [kworker/42:2]
+root          2  17692  0.0  0.0      0     0 ?        S      Dec 27 00:00:01 [kworker/44:1]
+root      15214  17816  0.0  0.0  52700  3888 ?        S    11:53:59 00:00:00 sudo /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root      17816  17817  0.0  0.0 223128 26208 ?        Sl   11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+stack     17135  17828  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17830  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17831  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17832  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17833  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17834  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17835  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17837  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17838  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17839  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17840  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17841  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17842  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17843  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17844  0.0  0.0 264784 91128 ?        S    11:53:59 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17845  0.0  0.0 264784 91128 ?        S    11:54:00 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17846  0.0  0.0 264784 91128 ?        S    11:54:00 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+stack     17135  17847  0.0  0.0 264784 91128 ?        S    11:54:00 00:00:00 /usr/bin/python /usr/local/bin/neutron-metadata-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/metadata_agent.ini
+root          1  18185  0.1  0.0 189256 46032 ?        S    11:54:04 00:00:01 /usr/bin/python /usr/local/bin/privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/l3_agent.ini --privsep_context neutron.privileged.default --privsep_sock_path /tmp/tmpkZgbAG/privsep.sock
+stack         1  18978  0.0  0.0  37636  2164 ?        Ss     Dec 27 00:00:11 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/039f5b47-e750-48ca-8deb-d43dff38c69c.conf
+root          1  19151  0.0  0.0 189552 46324 ?        S    11:54:12 00:00:00 /usr/bin/python /usr/local/bin/privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/dhcp_agent.ini --privsep_context neutron.privileged.default --privsep_sock_path /tmp/tmpIIQzuw/privsep.sock
+root      15804  19156  0.0  0.0  52700  3828 ?        S    11:54:12 00:00:00 sudo /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root      19156  19157  0.0  0.0 296860 26324 ?        Sl   11:54:12 00:00:00 /usr/bin/python /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root          2  19228  0.0  0.0      0     0 ?        S    11:54:13 00:00:00 [kworker/36:2]
+root          2  19919  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/47:1H]
+root      16479  20432  0.0  0.0  52700  3920 ?        S    11:54:28 00:00:00 sudo /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root      20432  20433  0.0  0.0 444324 26428 ?        Sl   11:54:28 00:00:01 /usr/bin/python /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root          2  20744  0.0  0.0      0     0 ?        S    11:54:29 00:00:00 [kworker/41:1]
+stack         1  20785  0.0  0.0  37636   888 ?        Ss   11:54:30 00:00:00 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/4cd24a8b-0d49-4940-8de2-ae44515679c2.conf
+root          2  21041  0.0  0.0      0     0 ?        S    11:54:33 00:00:00 [kworker/23:0]
+root          2  21294  0.0  0.0      0     0 ?        S    11:54:35 00:00:00 [kworker/31:2]
+root          2  21512  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/10:1H]
+root          2  21531  0.0  0.0      0     0 ?        S    11:54:41 00:00:00 [kworker/29:0]
+stack         1  21548  0.0  0.0  12888  1776 ?        Ss   11:54:41 00:00:00 radvd -C /opt/stack/data/neutron/ra/4cd24a8b-0d49-4940-8de2-ae44515679c2.radvd.conf -p /opt/stack/data/neutron/external/pids/4cd24a8b-0d49-4940-8de2-ae44515679c2.pid.radvd -u stack -m syslog
+root      21548  21549  0.0  0.0  12888   144 ?        S    11:54:41 00:00:00 radvd -C /opt/stack/data/neutron/ra/4cd24a8b-0d49-4940-8de2-ae44515679c2.radvd.conf -p /opt/stack/data/neutron/external/pids/4cd24a8b-0d49-4940-8de2-ae44515679c2.pid.radvd -u stack -m syslog
+root          2  21553  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/34:1H]
+stack         1  21915  0.0  0.0  37636  2204 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/72365954-2db1-4997-a322-414ea46410d7.conf
+stack         1  23305  1.4  0.0 262092 112948 ?       Ss   11:54:46 00:00:22 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+root          2  23307  0.0  0.0      0     0 ?        S    11:54:46 00:00:00 [kworker/52:1]
+root          2  24001  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/11:1H]
+stack         1  24024  0.0  0.0  96528 13944 ?        Ss   11:54:47 00:00:00 nova-api-metauWSGI master
+stack     24024  24028  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 1
+stack     24024  24029  0.1  0.0 305752 110604 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 2
+stack     24024  24030  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:01 nova-api-metauWSGI worker 3
+stack     24024  24031  0.1  0.0 305752 110616 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 4
+stack     24024  24032  0.1  0.0 305756 110612 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 5
+stack     24024  24034  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:01 nova-api-metauWSGI worker 6
+stack     24024  24035  0.1  0.0 305752 110600 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 7
+stack     24024  24036  0.1  0.0 305752 110632 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 8
+stack     24024  24037  0.1  0.0 305752 110604 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 9
+stack     24024  24038  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 10
+stack     24024  24039  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 11
+stack     24024  24041  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:01 nova-api-metauWSGI worker 12
+stack     24024  24042  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 13
+stack     24024  24043  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 14
+stack     24024  24045  0.1  0.0 306832 111564 ?       S    11:54:47 00:00:01 nova-api-metauWSGI worker 15
+stack     24024  24046  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:01 nova-api-metauWSGI worker 16
+stack     24024  24047  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 17
+stack     24024  24048  0.1  0.0 305752 110628 ?       S    11:54:47 00:00:02 nova-api-metauWSGI worker 18
+stack     24024  24049  0.0  0.0  96528  3620 ?        S    11:54:47 00:00:00 nova-api-metauWSGI http 1
+stack         1  24666  0.2  0.0 263008 113812 ?       Ss   11:54:48 00:00:04 /usr/bin/python /usr/local/bin/nova-consoleauth --config-file /etc/nova/nova.conf
+stack     23305  24763  0.1  0.0 266488 107936 ?       S    11:54:48 00:00:02 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24768  0.1  0.0 268112 109324 ?       S    11:54:48 00:00:02 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24772  0.1  0.0 268156 109432 ?       S    11:54:48 00:00:02 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24776  0.1  0.0 268116 109388 ?       S    11:54:48 00:00:02 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24783  0.1  0.0 266168 107260 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24787  0.1  0.0 266168 107264 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24794  0.1  0.0 266220 107256 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24798  0.1  0.0 266204 107380 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24802  0.1  0.0 266208 107360 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24805  0.1  0.0 266212 107304 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24808  0.1  0.0 266100 107204 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24812  0.1  0.0 266204 107324 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24814  0.1  0.0 266212 107344 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24820  0.1  0.0 266204 107268 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24827  0.1  0.0 266208 107384 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24833  0.1  0.0 266248 107220 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24838  0.1  0.0 266208 107384 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack     23305  24841  0.1  0.0 266116 107316 ?       S    11:54:48 00:00:01 /usr/bin/python /usr/local/bin/nova-scheduler --config-file /etc/nova/nova.conf
+stack         1  25616  0.2  0.0 2421504 114388 ?      Ss   11:54:49 00:00:04 /usr/bin/python /usr/local/bin/nova-novncproxy --config-file /etc/nova/nova_cell1.conf --web /opt/stack/noVNC
+root          2  25618  0.0  0.0      0     0 ?        S    11:54:49 00:00:00 [kworker/56:0]
+stack         1  26909  1.4  0.0 263944 115096 ?       Ss   11:54:51 00:00:22 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack         1  27548  1.4  0.0 256388 107168 ?       Ss   11:54:52 00:00:21 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     26909  28630  0.1  0.0 269260 110556 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28632  0.1  0.0 272748 114028 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28636  0.1  0.0 268904 110016 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28640  0.1  0.0 268940 110032 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28643  0.1  0.0 268956 110092 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28647  0.1  0.0 272652 114068 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28649  0.1  0.0 268880 109972 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28653  0.1  0.0 272800 114156 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28654  0.1  0.0 268904 109996 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28656  0.1  0.0 268900 110036 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28658  0.1  0.0 268876 109968 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28661  0.1  0.0 268876 109968 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28664  0.1  0.0 268900 110040 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28671  0.1  0.0 268528 109940 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28673  0.1  0.0 268876 109968 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28677  0.1  0.0 268916 110056 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28685  0.1  0.0 268500 109804 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack     26909  28693  0.1  0.0 268880 109972 ?       S    11:54:53 00:00:01 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova.conf
+stack         1  28926  1.4  0.0 1995068 154704 ?      Ssl  11:54:53 00:00:22 /usr/bin/python /usr/local/bin/nova-compute --config-file /etc/nova/nova-cpu.conf
+root          2  28941  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/28:1H]
+stack     27548  28948  0.1  0.0 271148 112256 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28950  0.1  0.0 270396 111656 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28953  0.1  0.0 271664 112824 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28956  0.1  0.0 272068 113384 ?       S    11:54:53 00:00:03 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28958  0.1  0.0 271720 112984 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28961  0.1  0.0 271396 112656 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28963  0.1  0.0 271620 112744 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28966  0.1  0.0 271564 112616 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28968  0.1  0.0 271080 112152 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28970  0.1  0.0 271988 113328 ?       S    11:54:53 00:00:03 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28972  0.1  0.0 271644 113016 ?       S    11:54:53 00:00:03 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28975  0.1  0.0 270128 111404 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28977  0.1  0.0 272028 113264 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28981  0.1  0.0 272444 113660 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28985  0.1  0.0 271932 113060 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28988  0.1  0.0 271572 112532 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28991  0.1  0.0 272212 113364 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+stack     27548  28994  0.1  0.0 272012 113092 ?       S    11:54:53 00:00:02 /usr/bin/python /usr/local/bin/nova-conductor --config-file /etc/nova/nova_cell1.conf
+root          2  29110  0.0  0.0      0     0 ?        S      Dec 28 00:00:01 [kworker/56:1]
+root          1  29487  0.0  0.0  27744  1592 ?        Ss   11:55:16 00:00:00 /usr/sbin/tgtd -f
+root          2  29494  0.0  0.0      0     0 ?        S    11:55:16 00:00:00 [kworker/13:0]
+root          2  29679  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/17:1H]
+stack         1  30160  0.0  0.0  96528 13684 ?        Ss   11:55:18 00:00:00 cinder-apiuWSGI master
+root          2  30162  0.0  0.0      0     0 ?        S    11:55:18 00:00:00 [kworker/9:0]
+stack     30160  30164  0.1  0.0 2943960 137004 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 1
+stack     30160  30165  0.1  0.0 2943964 137020 ?      Sl   11:55:18 00:00:03 cinder-apiuWSGI worker 2
+stack     30160  30166  0.1  0.0 2943964 143208 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 3
+stack     30160  30167  0.1  0.0 2943960 137028 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 4
+stack     30160  30168  0.2  0.0 2943960 136932 ?      Sl   11:55:18 00:00:04 cinder-apiuWSGI worker 5
+stack     30160  30170  0.1  0.0 2943960 136948 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 6
+stack     30160  30171  0.1  0.0 2948076 141432 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 7
+stack     30160  30172  0.3  0.0 2943960 136980 ?      Sl   11:55:18 00:00:04 cinder-apiuWSGI worker 8
+stack     30160  30173  0.2  0.0 2943960 136980 ?      Sl   11:55:18 00:00:04 cinder-apiuWSGI worker 9
+stack     30160  30174  0.1  0.0 2943960 137004 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 10
+stack     30160  30175  0.2  0.0 2943964 136924 ?      Sl   11:55:18 00:00:03 cinder-apiuWSGI worker 11
+stack     30160  30177  0.1  0.0 2943960 137008 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 12
+stack     30160  30178  0.2  0.0 2943960 137004 ?      Sl   11:55:18 00:00:03 cinder-apiuWSGI worker 13
+stack     30160  30179  0.1  0.0 2944216 137648 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 14
+stack     30160  30181  0.2  0.0 2947760 143152 ?      Sl   11:55:18 00:00:03 cinder-apiuWSGI worker 15
+stack     30160  30182  0.2  0.0 2949160 142288 ?      Sl   11:55:18 00:00:03 cinder-apiuWSGI worker 16
+stack     30160  30183  0.2  0.0 2943960 137004 ?      Sl   11:55:18 00:00:04 cinder-apiuWSGI worker 17
+stack     30160  30184  0.1  0.0 2943960 137004 ?      Sl   11:55:18 00:00:02 cinder-apiuWSGI worker 18
+stack         1  31162  0.0  0.0  37636  2168 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/d6fbe960-d063-4a32-a03b-fcbcc82ae864.conf
+stack         1  32140  0.5  0.0 2932492 138304 ?      Ssl  11:55:21 00:00:08 /usr/bin/python /usr/local/bin/cinder-scheduler --config-file /etc/cinder/cinder.conf
+root          2  32142  0.0  0.0      0     0 ?        S    11:55:21 00:00:00 [kworker/59:2]
+stack         1  32857  1.7  0.0 2448260 132196 ?      Ss   11:55:22 00:00:26 /usr/bin/python /usr/local/bin/cinder-volume --config-file /etc/cinder/cinder.conf
+root          2  32861  0.0  0.0      0     0 ?        S    11:55:22 00:00:00 [kworker/45:1]
+root          2  33108  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/63:0]
+stack     32857  33211  2.2  0.0 2452548 119308 ?      S    11:55:24 00:00:34 /usr/bin/python /usr/local/bin/cinder-volume --config-file /etc/cinder/cinder.conf
+root          1  33394  0.0  0.0  89244  5392 ?        Ss   11:55:25 00:00:00 /sbin/dmeventd -f
+root          2  34591  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/67:1H]
+root          2  35851  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/32:1H]
+stack         1  36437  0.4  0.0 270396 108072 ?       Ss   11:55:59 00:00:06 /usr/bin/python /usr/local/bin/neutron-sriov-nic-agent --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/sriov_agent.ini
+root          2  36439  0.0  0.0      0     0 ?        S    11:56:00 00:00:00 [kworker/62:2]
+root          2  36711  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/63:1]
+root          2  38049  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/9:2]
+stack         1  38084  0.0  0.0  37636   888 ?        Ss     Dec 31 00:00:02 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/66a2ee0d-42ea-453d-9927-ba91c791847f.conf
+root          2  38338  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/51:0]
+root          2  38607  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/62:0]
+root          2  38847  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/57:1]
+root          2  39520  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/13:1H]
+root          2  40142  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/54:1H]
+root          2  40421  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/15:1H]
+root          2  41109  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/14:1H]
+root          2  41434  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/38:1H]
+root          2  42031  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/71:2]
+root          2  42987  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/68:1]
+stack         1  43204  0.0  0.0  37636  2304 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/b947fd98-4480-46ee-9318-416e661e0346.conf
+stack         1  44267  0.0  0.0  37636  2284 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/2319b539-8bfd-4d73-b6e4-58b2fa3657b6.conf
+root          2  44922  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/40:2]
+stack         1  45468  0.0  0.0  37636  3104 ?        Ss     Dec 27 00:00:11 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/c2284dd8-86c2-496e-81b6-e1e9eab518d4.conf
+root          2  46306  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/67:2]
+root          2  46577  0.0  0.0      0     0 ?        S    11:57:34 00:00:00 [kworker/30:2]
+root          2  46648  0.0  0.0      0     0 ?        S    11:57:34 00:00:00 [kworker/24:0]
+stack         1  46681  0.0  0.0  37636  2288 ?        Ss     Dec 27 00:00:11 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/a648a359-5fea-464e-b6b3-1a51324774e6.conf
+root          2  46872  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/15:1]
+root          2  46933  0.0  0.0      0     0 ?        S    11:57:41 00:00:00 [kworker/33:1]
+root          2  47144  0.0  0.0      0     0 ?        S    11:57:44 00:00:00 [kworker/18:2]
+root          1  47278  0.0  0.0 130616 39432 ?        S    11:57:50 00:00:00 /usr/bin/python /usr/local/bin/privsep-helper --config-file /etc/nova/nova-cpu.conf --privsep_context nova.privsep.sys_admin_pctxt --privsep_sock_path /tmp/tmpGBHA30/privsep.sock
+root          2  47591  0.0  0.0      0     0 ?        S      Dec 27 00:00:01 [kworker/58:1]
+root      36437  47602  0.0  0.0      0     0 ?        Z    11:58:16 00:00:00 [sudo] <defunct>
+root      36437  47656  0.0  0.0  52700  3912 ?        S    11:58:17 00:00:00 sudo /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root      47656  47657  0.1  0.0 223128 26240 ?        Sl   11:58:17 00:00:02 /usr/bin/python /usr/local/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+root          2  47796  0.0  0.0      0     0 ?        S    11:58:32 00:00:00 [kworker/u384:0]
+root          2  48177  0.0  0.0      0     0 ?        S    12:00:27 00:00:00 [kworker/u386:1]
+root          2  48210  0.0  0.0      0     0 ?        S    12:01:00 00:00:00 [kworker/32:1]
+root       2564  48762  0.0  0.0  92800  6980 ?        Ss   12:08:05 00:00:00 sshd: stack [priv]
+stack     48762  48836  0.0  0.0  92896  4220 ?        S    12:08:05 00:00:00 sshd: stack@notty
+root          2  48954  0.0  0.0      0     0 ?        S    12:08:14 00:00:00 [kworker/32:2]
+stack     48836  49024  0.0  0.0   4504   700 ?        Ss   12:08:29 00:00:00 /bin/sh -c /usr/bin/python2 && sleep 0
+stack     49024  49025  0.0  0.0  32344 10580 ?        S    12:08:29 00:00:00 /usr/bin/python2
+stack     49025  49026  0.0  0.0 110648 12864 ?        Sl   12:08:29 00:00:00 /usr/bin/python2 /tmp/ansible_88qPw5/ansible_module_command.py
+stack     49026  49027  0.0  0.0   4504  1624 ?        S    12:08:29 00:00:00 sh /opt/workingdir/taas-related/ci-bash/deploy.sh
+root          2  49100  0.0  0.0      0     0 ?        S    12:08:31 00:00:00 [kworker/17:0]
+stack     49027  49129  1.9  0.0  19684 10360 ?        S    12:08:32 00:00:14 bash ./stack.sh
+root          2  49175  0.0  0.0      0     0 ?        S    12:08:32 00:00:00 [kworker/17:3]
+root          2  50792  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/53:1]
+stack         1  51480  0.0  0.0  37636  2276 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/791a0b13-baa3-4a6a-aaa1-935ffd974e53.conf
+stack         1  51595  0.0  0.0  37636  2204 ?        Ss     Dec 28 00:00:08 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/3a6ae3b4-780e-46c5-a9ab-c0b97c72b8b2.conf
+stack     49129  52943  0.0  0.0  14736  4212 ?        S    12:08:37 00:00:00 bash ./stack.sh
+stack     49129  52953  0.0  0.0  14736  4212 ?        S    12:08:37 00:00:00 bash ./stack.sh
+stack     52943  52959  0.5  0.0  25688  7788 ?        S    12:08:37 00:00:04 python /opt/workingdir/devstack/tools/outfilter.py -v --no-timestamp -o /opt/stack/logs/stack.sh.log.2019-01-02-120837
+stack         1  52964  0.0  0.0  37636  3092 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/585cf517-85bd-45ba-abc2-1a99c197c593.conf
+stack     52953  52971  0.0  0.0  25680  7712 ?        S    12:08:37 00:00:00 python /opt/workingdir/devstack/tools/outfilter.py -o /opt/stack/logs/stack.sh.log.2019-01-02-120837.summary.2019-01-02-120837
+root          2  53363  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/16:1H]
+manjeets      1  53518  0.0  0.0  37636  2276 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/6b1386e7-516e-4104-8ba3-3fb470c4553d.conf
+stack         1  54170  0.0  0.0  37636  3060 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/34edc844-7f78-4d99-a5a7-8022c0c4ce63.conf
+root          2  54374  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/42:1H]
+stack         1  54542  0.0  0.0  37636  3112 ?        Ss     Dec 27 00:00:11 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/d7a9d951-33dc-44ae-96c2-5263c3db5698.conf
+root          2  55514  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/41:0]
+root          2  56468  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/49:3]
+root       2564  57038  0.0  0.0  92804  6952 ?        Ss     Dec 31 00:00:00 sshd: manjeets [priv]
+manjeets      1  57040  0.0  0.0  45396  4780 ?        Ss     Dec 31 00:00:00 /lib/systemd/systemd --user
+manjeets  57040  57044  0.0  0.0  62196  2884 ?        S      Dec 31 00:00:00 (sd-pam)
+manjeets  57038  57076  0.0  0.0  92804  3084 ?        S      Dec 31 00:00:00 sshd: manjeets@pts/1
+manjeets  57076  57077  0.0  0.0  21628  4280 pts/1    Ss+    Dec 31 00:00:00 -bash
+root          2  57285  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/66:1]
+root          2  57476  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/12:1H]
+stack         1  58915  0.0  0.0  37636  2272 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/581feaf8-f9bc-4d3b-9c03-f7f02f457096.conf
+root          1  60128  1.6  0.0  52152 15228 ?        Ss   12:09:19 00:00:11 /lib/systemd/systemd-journald
+root          2  60149  0.0  0.0      0     0 ?        S    12:09:19 00:00:00 [kworker/13:2]
+root          2  60170  0.0  0.0      0     0 ?        S    12:09:20 00:00:00 [kworker/27:2]
+root          2  60813  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/65:2]
+stack         1  61638  0.0  0.0  37636  3108 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/12dc2a49-1577-4fba-875c-926de3aa3e21.conf
+stack         1  62289  0.0  0.0  37504   884 ?        Ss     Dec 31 00:00:03 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/528058bd-d0e1-4884-8271-a6cc13edbbe4.conf
+root          2  62545  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/40:1]
+root          2  63066  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/2:0]
+root          2  63949  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/5:1]
+root          2  64037  0.0  0.0      0     0 ?        S      Dec 31 00:00:06 [kworker/34:2]
+root          2  64371  0.0  0.0      0     0 ?        S    12:09:43 00:00:00 [kworker/7:1]
+root          1  65104  0.1  0.0  20636  4816 ?        S<s  12:09:45 00:00:00 ovsdb-server /etc/openvswitch/conf.db -vconsole:emer -vsyslog:err -vfile:info --remote=punix:/var/run/openvswitch/db.sock --private-key=db:Open_vSwitch,SSL,private_key --certificate=db:Open_vSwitch,SSL,certificate --bootstrap-ca-cert=db:Open_vSwitch,SSL,ca_cert --no-chdir --log-file=/var/log/openvswitch/ovsdb-server.log --pidfile=/var/run/openvswitch/ovsdb-server.pid --detach
+root          1  65145  3.5  0.2 5408444 617396 ?      S<Lsl 12:09:46 00:00:23 ovs-vswitchd unix:/var/run/openvswitch/db.sock -vconsole:emer -vsyslog:err -vfile:info --mlockall --no-chdir --log-file=/var/log/openvswitch/ovs-vswitchd.log --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --detach
+root          2  65603  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/26:1]
+root          2  65664  0.0  0.0      0     0 ?        S    12:09:47 00:00:00 [kworker/34:0]
+stack     15214  66302  0.0  0.0  20120  3024 ?        S    12:09:48 00:00:00 ovsdb-client monitor tcp:127.0.0.1:6640 Interface name,ofport,external_ids --format=json
+root          2  68009  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/18:0]
+root          2  68239  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/21:0]
+root          2  68697  0.0  0.0      0     0 ?        S      Dec 28 00:00:01 [kworker/71:1]
+root          2  69271  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/50:1]
+root          2  69378  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/10:2]
+root          2  69627  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/5:2]
+root          2  69709  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/16:0]
+stack         1  69944  0.0  0.0  37636  3068 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/9ceac54e-3690-4166-8473-1cc82901c767.conf
+root          2  70002  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/8:1]
+root          2  70137  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/23:1]
+root          2  70349  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/1:2]
+root          2  70413  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/48:1]
+root          2  70415  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/19:0]
+root          2  71045  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/12:2]
+root          2  71200  0.0  0.0      0     0 ?        S    12:10:53 00:00:00 [kworker/19:1]
+root          2  71691  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/46:1]
+root          2  73560  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/61:1H]
+stack         1  73662  0.0  0.0  37636  3072 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/6229265c-87cd-4f58-b54d-176e9ab20928.conf
+stack         1  76420  0.0  0.0  37636  2204 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/5721200c-814d-4aca-8646-cd76fbafd32f.conf
+stack         1  76466  0.0  0.0  37636  2300 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/c7610963-7323-4da9-89d9-84143ed13448.conf
+uuidd         1  76769  0.0  0.0  28156  1404 ?        Ss     Dec 21 00:00:00 /usr/sbin/uuidd --socket-activation
+stack         1  77278  0.0  0.0  37636  3096 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/95acedb4-ea57-47ea-a4ea-621be72658a5.conf
+stack         1  77773  0.0  0.0  37636  2224 ?        Ss     Dec 27 00:00:11 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/7a20409c-bf41-4bcb-96fc-47319b1ce386.conf
+root          2  78092  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/2:1]
+root          2  79183  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/43:0]
+root          2  79309  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/48:1H]
+stack         1  79619  0.0  0.0  37636  3100 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/770faef3-9312-4d6a-b21e-8aed500f27cf.conf
+stack         1  79681  0.0  0.0  37636  2244 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/bbfb06a0-f102-4b0a-9c56-0e02f6c22ff9.conf
+root          2  81280  0.0  0.0      0     0 ?        S    12:11:53 00:00:00 [kworker/u386:0]
+root          2  81391  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/31:1H]
+root          2  81405  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/41:1H]
+root          2  81410  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/64:1H]
+root          2  82085  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/70:0]
+root          2  85003  0.0  0.0      0     0 ?        S      Dec 30 00:00:00 [kworker/70:1]
+root          2  86535  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/35:0]
+root          2  86609  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/54:0]
+root          2  86616  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/6:0]
+root          2  86670  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/22:0]
+root          2  88219  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/60:1]
+root          2  89442  0.0  0.0      0     0 ?        S      Dec 31 00:00:03 [kworker/u384:2]
+root          1  90349  0.5  0.0 1768748 44796 ?       Ssl  12:13:04 00:00:02 /usr/sbin/libvirtd
+root          2  90361  0.0  0.0      0     0 ?        S    12:13:04 00:00:00 [kworker/8:0]
+root          1  90387  0.0  0.0 123924  6176 ?        Ssl  12:13:04 00:00:00 /usr/sbin/virtlogd
+root          1  93558  0.0  0.0  91260  5740 ?        Ss   12:13:22 00:00:00 /usr/sbin/apache2 -k start
+stack     93558  93560  0.0  0.0 257496  8544 ?        Sl   12:13:22 00:00:00 (wsgi:horizon)    -k start
+stack     93558  93561  0.0  0.0 257504  8544 ?        Sl   12:13:22 00:00:00 (wsgi:horizon)    -k start
+stack     93558  93562  0.0  0.0 257496  8544 ?        Sl   12:13:22 00:00:00 (wsgi:horizon)    -k start
+www-data  93558  93563  0.1  0.0 645216 12424 ?        Sl   12:13:22 00:00:00 /usr/sbin/apache2 -k start
+www-data  93558  93564  0.0  0.0 579504 12428 ?        Sl   12:13:22 00:00:00 /usr/sbin/apache2 -k start
+root          2  94317  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/4:2]
+root          2  94440  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/37:1]
+root          2  94584  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/44:0]
+root          2  95720  0.0  0.0      0     0 ?        S    12:13:57 00:00:00 [kworker/u385:0]
+root          2  96485  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/33:2]
+stack         1  96713  0.0  0.0  37636  2260 ?        Ss     Dec 28 00:00:08 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/76ced855-3717-4861-b8db-1f500d7d7058.conf
+mysql         1  97454  5.7  0.1 7840468 454364 ?      Ssl  12:14:18 00:00:22 /usr/sbin/mysqld
+root          2  97458  0.0  0.0      0     0 ?        S    12:14:18 00:00:00 [kworker/28:1]
+root          2  97461  0.0  0.0      0     0 ?        S    12:14:18 00:00:00 [kworker/14:0]
+root          2  97533  0.0  0.0      0     0 ?        S    12:14:19 00:00:00 [kworker/0:1]
+manjeets      1  97746  0.0  0.0  37636  2164 ?        Ss     Dec 21 00:00:18 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/cfb18442-2b99-4266-94b7-70b08525f365.conf
+root          2  99235  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/39:3]
+root          2  99508  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/25:0]
+memcache      1 100466  0.3  0.0 337828 16316 ?        Ssl  12:14:31 00:00:01 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1
+root          2 102904  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/49:0]
+root          2 105127  0.0  0.0      0     0 ?        S      Jan 01 00:00:00 [kworker/20:1]
+root          2 106324  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/57:1H]
+root          2 107276  0.0  0.0      0     0 ?        S      Jan 01 00:00:00 [kworker/30:0]
+stack         1 108867  0.0  0.0  37636  2276 ?        Ss     Dec 28 00:00:09 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/ed13ae56-28b1-4e36-a941-08d2920a80b9.conf
+root          2 109219  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/51:4]
+root          2 110361  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [dm_bufio_cache]
+root          2 110366  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/60:1H]
+root          2 110634  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/43:1H]
+manjeets      1 111517  0.0  0.0  37636  2152 ?        Ss     Dec 27 00:00:12 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/98d537c0-db63-4e9d-b631-2c82c033077d.conf
+root          2 112166  0.0  0.0      0     0 ?        S    17:17:53 00:00:00 [kworker/26:0]
+root          2 112612  0.0  0.0      0     0 ?        S    12:17:14 00:00:00 [kworker/u386:2]
+root          2 112613  0.0  0.0      0     0 ?        S    12:17:14 00:00:00 [kworker/u386:3]
+root          2 113111  0.0  0.0      0     0 ?        S    19:15:41 00:00:00 [kworker/20:2]
+stack         1 113865  0.0  0.0  37636   888 ?        Ss     Dec 31 00:00:03 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/ce7c1560-824b-448e-9071-44eaecafe66c.conf
+root          2 115351  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/50:1H]
+root          2 119471  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/6:1]
+root       2564 120242  0.0  0.0  92804  6952 ?        Ss   10:25:41 00:00:00 sshd: stack [priv]
+stack    120242 120317  0.0  0.0  93620  5172 ?        S    10:25:58 00:00:02 sshd: stack@pts/0
+stack    120317 120320  0.0  0.0  21264  3832 pts/0    Ss+  10:25:58 00:00:00 -bash
+root          2 121160  0.0  0.0      0     0 ?        S    11:02:12 00:00:00 [kworker/29:2]
+root          2 121284  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/58:1H]
+root          2 121412  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/55:2]
+root          2 121751  0.0  0.0      0     0 ?        S    11:19:42 00:00:00 [kworker/7:3]
+nobody        1 121827  0.0  0.0  52888   400 ?        S    12:18:58 00:00:00 dnsmasq --no-hosts  --pid-file=/opt/stack/data/neutron/dhcp/224706c6-3014-400d-bb16-8ac003dd393e/pid --dhcp-hostsfile=/opt/stack/data/neutron/dhcp/224706c6-3014-400d-bb16-8ac003dd393e/host --addn-hosts=/opt/stack/data/neutron/dhcp/224706c6-3014-400d-bb16-8ac003dd393e/addn_hosts --dhcp-optsfile=/opt/stack/data/neutron/dhcp/224706c6-3014-400d-bb16-8ac003dd393e/opts --dhcp-leasefile=/opt/stack/data/neutron/dhcp/224706c6-3014-400d-bb16-8ac003dd393e/leases --dhcp-match=set:ipxe,175 --dhcp-userclass=set:ipxe6,iPXE --local-service --bind-interfaces --dhcp-range=set:tag1,10.0.0.0,static,255.255.255.192,86400s --dhcp-option-force=option:mtu,1450 --dhcp-lease-max=64 --conf-file= --domain=openstacklocal
+root          2 122100  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/46:1H]
+root          2 122306  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/62:1H]
+root          2 123659  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/37:1H]
+root          2 125387  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/44:1H]
+root          2 126008  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/52:1H]
+root          2 126198  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/69:1H]
+root          2 127140  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/66:1H]
+root          2 129738  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/11:0]
+stack     49129 130250  0.0  0.0  26696  9112 ?        S    12:20:55 00:00:00 python /opt/workingdir/devstack/tools/worlddump.py -d /opt/stack/logs
+stack    130250 130253  0.0  0.0   4504   704 ?        S    12:20:55 00:00:00 /bin/sh -c ps axo user,ppid,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,args
+stack    130253 130254  0.0  0.0  37364  3320 ?        R    12:20:55 00:00:00 ps axo user,ppid,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,args
+root          2 132656  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/68:2]
+root          2 133393  0.0  0.0      0     0 ?        S    11:24:30 00:00:00 [kworker/28:2]
+root          2 134614  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/24:2]
+root          2 134656  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/15:2]
+root          2 135352  0.0  0.0      0     0 ?        S    11:24:55 00:00:00 [kworker/50:0]
+rabbitmq      1 135358  0.0  0.0   4504   692 ?        Ss   11:24:55 00:00:00 /bin/sh /usr/sbin/rabbitmq-server
+root          2 135361  0.0  0.0      0     0 ?        S    11:24:55 00:00:00 [kworker/43:2]
+rabbitmq 135358 135374  0.0  0.0   4504  1720 ?        S    11:24:55 00:00:00 /bin/sh /usr/lib/rabbitmq/bin/rabbitmq-server
+rabbitmq      1 135537  0.0  0.0  26304  2188 ?        S    11:24:55 00:00:00 /usr/lib/erlang/erts-7.3/bin/epmd -daemon
+rabbitmq 135374 135761 22.1  0.1 25196708 392504 ?     Sl   11:24:55 00:12:24 /usr/lib/erlang/erts-7.3/bin/beam.smp -W w -A 1024 -P 1048576 -t 5000000 -stbt db -zdbbl 32000 -K true -B i -- -root /usr/lib/erlang -progname erl -- -home /var/lib/rabbitmq -- -pa /usr/lib/rabbitmq/lib/rabbitmq_server-3.6.10/ebin -noshell -noinput -s rabbit boot -sname rabbit@jfz1r03h11 -boot start_sasl -kernel inet_default_connect_options [{nodelay,true}] -sasl errlog_type error -sasl sasl_error_logger false -rabbit error_logger {file,"/var/log/rabbitmq/rabbit@jfz1r03h11.log"} -rabbit sasl_error_logger {file,"/var/log/rabbitmq/rabbit@jfz1r03h11-sasl.log"} -rabbit enabled_plugins_file "/etc/rabbitmq/enabled_plugins" -rabbit plugins_dir "/usr/lib/rabbitmq/plugins:/usr/lib/rabbitmq/lib/rabbitmq_server-3.6.10/plugins" -rabbit plugins_expand_dir "/var/lib/rabbitmq/mnesia/rabbit@jfz1r03h11-plugins-expand" -os_mon start_cpu_sup false -os_mon start_disksup false -os_mon start_memsup false -mnesia dir "/var/lib/rabbitmq/mnesia/rabbit@jfz1r03h11" -kernel inet_dist_listen_min 25672 -kernel inet_dist_listen_max 25672
+root          2 136500  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/1:1]
+rabbitmq 135761 137069  0.0  0.0   7504   912 ?        Ss   11:24:58 00:00:00 inet_gethost 4
+rabbitmq 137069 137070  0.0  0.0   9624  1472 ?        S    11:24:58 00:00:00 inet_gethost 4
+root          2 137089  0.0  0.0      0     0 ?        S    11:24:58 00:00:00 [kworker/60:0]
+stack         1 138076  0.0  0.0  37636  2284 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/ddad0ee1-e955-4d37-a03f-ee65b61d5926.conf
+root          2 139807  0.0  0.0      0     0 ?        S    11:25:16 00:00:00 [kworker/31:0]
+root          2 139820  0.0  0.0      0     0 ?        S    11:25:16 00:00:00 [kworker/69:0]
+root          2 139824  0.0  0.0      0     0 ?        S    11:25:17 00:00:02 [kworker/0:2]
+root          2 140074  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/58:0]
+root          2 141258  0.0  0.0      0     0 ?        S    11:25:25 00:00:00 [kworker/25:1]
+root          2 146984  0.0  0.0      0     0 ?        S      Dec 28 00:00:01 [kworker/37:0]
+root          2 147246  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/35:2]
+root          2 148586  0.0  0.0      0     0 ?        S<     Dec 21 00:00:00 [kworker/53:1H]
+root          2 150948  0.0  0.0      0     0 ?        S<     Dec 22 00:00:00 [kworker/71:1H]
+stack         1 151259  0.0  0.0  37636  2208 ?        Ss     Dec 28 00:00:09 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/7f6937e0-baf5-4e2a-a7fc-34dca6b8d523.conf
+root          2 151515  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/48:2]
+root          2 151767  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/38:1]
+root          2 154486  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/45:2]
+root          2 157206  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/47:0]
+root          2 157585  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/36:1]
+root          2 158309  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/4:1]
+root          2 158658  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/59:1]
+root          2 159206  0.0  0.0      0     0 ?        S<     Dec 22 00:00:00 [kworker/68:1H]
+stack         1 161825  0.0  0.0 115512 11020 ?        Sl     Dec 31 00:00:00 /usr/bin/python2 /tmp/ansible_sPGfs8/ansible_module_zuul_console.py
+root          2 162680  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/55:1]
+root          2 163483  0.0  0.0      0     0 ?        S    11:34:01 00:00:00 [kworker/27:1]
+stack         1 164008  0.0  0.0  37636  2220 ?        Ss     Dec 28 00:00:09 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/c7f0e6e5-ba74-409d-87da-e0ad0ec26051.conf
+root          2 165448  0.0  0.0      0     0 ?        S<     Dec 27 00:00:00 [vfio-irqfd-clea]
+root          2 167111  0.0  0.0      0     0 ?        S    11:34:09 00:00:00 [kworker/10:1]
+root          2 171551  0.0  0.0      0     0 ?        S    11:36:51 00:00:00 [kworker/u385:2]
+root          2 174753  0.0  0.0      0     0 ?        S    11:45:34 00:00:00 [kworker/14:1]
+stack         1 175437  0.0  0.0  12512  2932 ?        Ss   11:45:36 00:00:00 /bin/bash /opt/workingdir/devstack/tools/dstat.sh /opt/stack/logs
+stack    175437 175439  6.2  0.0  30224  9144 ?        S    11:45:36 00:02:11 /usr/bin/python /usr/bin/dstat -tcmndrylpg --tcp --output /opt/stack/logs/dstat-csv.log
+stack    175437 175440 14.3  0.0  32948 11868 ?        S    11:45:36 00:05:04 /usr/bin/python /usr/bin/dstat -tcmndrylpg --top-cpu-adv --top-io-adv --top-mem --swap --tcp
+root          1 176327  0.7  0.0 10519484 20508 ?      Ssl  11:45:38 00:00:15 /opt/stack/bin/etcd --name jfz1r03h11 --data-dir /opt/stack/data/etcd --initial-cluster-state new --initial-cluster-token etcd-cluster-01 --initial-cluster jfz1r03h11=http://172.16.3.11:2380 --initial-advertise-peer-urls http://172.16.3.11:2380 --advertise-client-urls http://172.16.3.11:2379 --listen-peer-urls http://0.0.0.0:2380 --listen-client-urls http://172.16.3.11:2379 --debug
+root          2 177119  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/66:0]
+stack         1 177427  0.0  0.0  96528 13816 ?        Ss   11:45:49 00:00:00 keystoneuWSGI master
+stack    177427 177429  0.4  0.0 274148 107880 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 1
+stack    177427 177430  0.4  0.0 273704 107296 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 2
+stack    177427 177431  0.4  0.0 274200 107828 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 3
+stack    177427 177432  0.4  0.0 274860 108500 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 4
+stack    177427 177433  0.4  0.0 273256 107896 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 5
+stack    177427 177434  0.4  0.0 274212 107908 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 6
+stack    177427 177435  0.4  0.0 273088 107764 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 7
+stack    177427 177436  0.4  0.0 273368 107188 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 8
+stack    177427 177437  0.4  0.0 273824 108676 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 9
+stack    177427 177438  0.4  0.0 273088 107624 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 10
+stack    177427 177439  0.4  0.0 273788 108440 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 11
+stack    177427 177440  0.4  0.0 273864 107588 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 12
+stack    177427 177441  0.4  0.0 274912 108656 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 13
+stack    177427 177442  0.4  0.0 274432 108096 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 14
+stack    177427 177443  0.4  0.0 274900 108504 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 15
+stack    177427 177444  0.4  0.0 272716 107492 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 16
+stack    177427 177445  0.4  0.0 274248 107796 ?       S    11:45:49 00:00:08 keystoneuWSGI worker 17
+stack    177427 177446  0.4  0.0 273876 108672 ?       S    11:45:49 00:00:09 keystoneuWSGI worker 18
+root          2 177770  0.0  0.0      0     0 ?        S    11:45:50 00:00:00 [kworker/16:1]
+root          2 178794  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/47:2]
+root          2 181566  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/3:2]
+root          1 183461  0.0  0.0  36472  3516 ?        Ss     Dec 31 00:00:05 /usr/sbin/conntrackd -C /etc/conntrackd/conntrackd.conf
+root          2 184461  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/12:0]
+root          2 184536  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/3:1]
+root          2 192069  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/46:2]
+root          2 192196  0.0  0.0      0     0 ?        S      Dec 28 00:00:00 [kworker/69:2]
+manjeets      1 192908  0.0  0.0  37636  2280 ?        Ss     Dec 27 00:00:10 haproxy -f /opt/stack/data/neutron/ns-metadata-proxy/df574d71-24af-4d2f-a483-1bee87079dd6.conf
+root          2 193654  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/57:2]
+root          2 194139  0.0  0.0      0     0 ?        S      Dec 28 00:00:01 [kworker/38:2]
+root          2 195098  0.0  0.0      0     0 ?        S      Dec 31 00:00:00 [kworker/21:1]
+stack         1 196176  0.0  0.0  45400  4840 ?        Ss     Dec 31 00:00:00 /lib/systemd/systemd --user
+stack    196176 196180  0.0  0.0  62196  2884 ?        S      Dec 31 00:00:00 (sd-pam)
+
+
+Network Dump
+============
+
+brctl show
+----------
+
+bridge name	bridge id		STP enabled	interfaces
+virbr0		8000.525400cd56bf	yes		virbr0-nic
+
+ip neigh
+--------
+
+172.16.0.1 dev ens785f0 lladdr dc:ef:09:a2:fb:72 STALE
+172.16.0.124 dev ens785f0 lladdr 00:04:96:a1:d1:3b STALE
+172.16.0.102 dev ens785f0 lladdr 00:04:96:99:59:47 STALE
+172.16.0.104 dev ens785f0 lladdr 00:04:96:9a:ee:c1 STALE
+172.16.2.1 dev ens785f0 lladdr 00:1e:67:d0:d5:fe STALE
+172.16.0.125 dev ens785f0 lladdr 00:04:96:a2:25:75 STALE
+172.16.0.103 dev ens785f0 lladdr 00:04:96:9a:ef:68 STALE
+172.16.0.105 dev ens785f0 lladdr 00:04:96:9b:b8:1f STALE
+172.16.0.2 dev ens785f0 lladdr 00:1e:67:57:ac:6b STALE
+fe80::3efd:feff:fec0:603c dev ens785f0 lladdr 3c:fd:fe:c0:60:3c STALE
+fe80::a6bf:1ff:fe55:7a60 dev ens785f0 lladdr a4:bf:01:55:7a:60 STALE
+fe80::f816:3eff:feac:6f7d dev br-ex lladdr fa:16:3e:ac:6f:7d STALE
+fe80::21e:67ff:fefd:f0f4 dev ens785f0 lladdr 00:1e:67:fd:f0:f4 STALE
+fe80::21e:67ff:fef8:5790 dev ens785f0 lladdr 00:1e:67:f8:57:90 STALE
+fe80::a6bf:1ff:fe55:7a5f dev ens785f0 lladdr a4:bf:01:55:7a:5f STALE
+fe80::21e:67ff:fefe:8d8 dev ens785f0 lladdr 00:1e:67:fe:08:d8 STALE
+fe80::21e:67ff:fefd:f748 dev ens785f0 lladdr 00:1e:67:fd:f7:48 STALE
+fe80::21e:67ff:fefd:ee8c dev ens785f0 lladdr 00:1e:67:fd:ee:8c STALE
+fe80::21e:67ff:fefd:f2d8 dev ens785f0 lladdr 00:1e:67:fd:f2:d8 STALE
+fe80::21e:67ff:fefd:f720 dev ens785f0 lladdr 00:1e:67:fd:f7:20 STALE
+fe80::21e:67ff:fefd:ee7c dev ens785f0 lladdr 00:1e:67:fd:ee:7c STALE
+
+ip addr
+-------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eno1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether a4:bf:01:00:98:dd brd ff:ff:ff:ff:ff:ff
+3: eno2: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether a4:bf:01:00:98:de brd ff:ff:ff:ff:ff:ff
+4: ens785f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq portid 3cfdfebeb6ec state UP group default qlen 1000
+    link/ether 3c:fd:fe:be:b6:ec brd ff:ff:ff:ff:ff:ff
+    inet 172.16.3.11/18 brd 172.16.63.255 scope global ens785f0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::3efd:feff:febe:b6ec/64 scope link 
+       valid_lft forever preferred_lft forever
+5: ens785f1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq portid 3cfdfebeb6ed state UP group default qlen 1000
+    link/ether 3c:fd:fe:be:b6:ed brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::3efd:feff:febe:b6ed/64 scope link 
+       valid_lft forever preferred_lft forever
+6: eno3: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:1e:67:fd:ee:0c brd ff:ff:ff:ff:ff:ff
+7: eno4: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:1e:67:fd:ee:0d brd ff:ff:ff:ff:ff:ff
+8: ens801f0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 90:e2:ba:c0:e9:10 brd ff:ff:ff:ff:ff:ff
+9: ens801f1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 90:e2:ba:c0:e9:11 brd ff:ff:ff:ff:ff:ff
+10: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1
+    link/ether e2:40:ec:6c:6e:7c brd ff:ff:ff:ff:ff:ff
+11: br-tap: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1
+    link/ether 56:00:12:e4:6e:4b brd ff:ff:ff:ff:ff:ff
+12: br-ens785f0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1
+    link/ether a2:d2:54:c9:9f:4b brd ff:ff:ff:ff:ff:ff
+13: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 52:54:00:cd:56:bf brd ff:ff:ff:ff:ff:ff
+    inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
+       valid_lft forever preferred_lft forever
+14: virbr0-nic: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master virbr0 state DOWN group default qlen 1000
+    link/ether 52:54:00:cd:56:bf brd ff:ff:ff:ff:ff:ff
+719: br-int: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1
+    link/ether fe:bc:9c:81:3d:49 brd ff:ff:ff:ff:ff:ff
+720: br-ex: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1
+    link/ether 8a:50:19:b1:94:4a brd ff:ff:ff:ff:ff:ff
+    inet 172.24.4.1/24 scope global br-ex
+       valid_lft forever preferred_lft forever
+    inet6 2001:db8::2/64 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::8850:19ff:feb1:944a/64 scope link 
+       valid_lft forever preferred_lft forever
+721: br-tun: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1
+    link/ether 8a:35:5c:65:1a:41 brd ff:ff:ff:ff:ff:ff
+736: enp6s10: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5e:60:b3:05:d5:50 brd ff:ff:ff:ff:ff:ff
+737: enp6s10f4: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether de:12:02:d3:2b:f3 brd ff:ff:ff:ff:ff:ff
+738: enp6s10f2: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 4a:da:ff:0d:d8:e8 brd ff:ff:ff:ff:ff:ff
+739: enp6s10f1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 26:d2:7b:29:c0:6d brd ff:ff:ff:ff:ff:ff
+740: enp6s10f3: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 8a:50:27:e4:ce:6d brd ff:ff:ff:ff:ff:ff
+741: enp6s10f5: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 2a:b1:51:33:2f:8c brd ff:ff:ff:ff:ff:ff
+742: enp6s10f6: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fe:3b:0e:80:b0:33 brd ff:ff:ff:ff:ff:ff
+
+ip link
+-------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eno1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether a4:bf:01:00:98:dd brd ff:ff:ff:ff:ff:ff
+3: eno2: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether a4:bf:01:00:98:de brd ff:ff:ff:ff:ff:ff
+4: ens785f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq portid 3cfdfebeb6ec state UP mode DEFAULT group default qlen 1000
+    link/ether 3c:fd:fe:be:b6:ec brd ff:ff:ff:ff:ff:ff
+5: ens785f1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq portid 3cfdfebeb6ed state UP mode DEFAULT group default qlen 1000
+    link/ether 3c:fd:fe:be:b6:ed brd ff:ff:ff:ff:ff:ff
+    vf 0 MAC 00:00:00:00:00:00, spoof checking on, link-state auto
+    vf 1 MAC 00:00:00:00:00:00, spoof checking on, link-state auto
+    vf 2 MAC 00:00:00:00:00:00, spoof checking on, link-state auto
+    vf 3 MAC 00:00:00:00:00:00, spoof checking on, link-state auto
+    vf 4 MAC 00:00:00:00:00:00, spoof checking on, link-state auto
+    vf 5 MAC 00:00:00:00:00:00, spoof checking on, link-state auto
+    vf 6 MAC 00:00:00:00:00:00, spoof checking on, link-state auto
+6: eno3: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:1e:67:fd:ee:0c brd ff:ff:ff:ff:ff:ff
+7: eno4: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:1e:67:fd:ee:0d brd ff:ff:ff:ff:ff:ff
+8: ens801f0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 90:e2:ba:c0:e9:10 brd ff:ff:ff:ff:ff:ff
+9: ens801f1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 90:e2:ba:c0:e9:11 brd ff:ff:ff:ff:ff:ff
+10: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/ether e2:40:ec:6c:6e:7c brd ff:ff:ff:ff:ff:ff
+11: br-tap: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/ether 56:00:12:e4:6e:4b brd ff:ff:ff:ff:ff:ff
+12: br-ens785f0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/ether a2:d2:54:c9:9f:4b brd ff:ff:ff:ff:ff:ff
+13: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default qlen 1000
+    link/ether 52:54:00:cd:56:bf brd ff:ff:ff:ff:ff:ff
+14: virbr0-nic: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast master virbr0 state DOWN mode DEFAULT group default qlen 1000
+    link/ether 52:54:00:cd:56:bf brd ff:ff:ff:ff:ff:ff
+719: br-int: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/ether fe:bc:9c:81:3d:49 brd ff:ff:ff:ff:ff:ff
+720: br-ex: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1
+    link/ether 8a:50:19:b1:94:4a brd ff:ff:ff:ff:ff:ff
+721: br-tun: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1
+    link/ether 8a:35:5c:65:1a:41 brd ff:ff:ff:ff:ff:ff
+736: enp6s10: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 5e:60:b3:05:d5:50 brd ff:ff:ff:ff:ff:ff
+737: enp6s10f4: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether de:12:02:d3:2b:f3 brd ff:ff:ff:ff:ff:ff
+738: enp6s10f2: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 4a:da:ff:0d:d8:e8 brd ff:ff:ff:ff:ff:ff
+739: enp6s10f1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 26:d2:7b:29:c0:6d brd ff:ff:ff:ff:ff:ff
+740: enp6s10f3: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 8a:50:27:e4:ce:6d brd ff:ff:ff:ff:ff:ff
+741: enp6s10f5: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 2a:b1:51:33:2f:8c brd ff:ff:ff:ff:ff:ff
+742: enp6s10f6: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether fe:3b:0e:80:b0:33 brd ff:ff:ff:ff:ff:ff
+
+ip route
+--------
+
+default via 172.16.0.1 dev ens785f0 onlink 
+172.16.0.0/18 dev ens785f0  proto kernel  scope link  src 172.16.3.11 
+172.24.4.0/24 dev br-ex  proto kernel  scope link  src 172.24.4.1 
+192.168.122.0/24 dev virbr0  proto kernel  scope link  src 192.168.122.1 linkdown 
+
+ip netns
+--------
+
+qrouter-4cd24a8b-0d49-4940-8de2-ae44515679c2
+qdhcp-224706c6-3014-400d-bb16-8ac003dd393e
+
+sudo ip netns exec qrouter-4cd24a8b-0d49-4940-8de2-ae44515679c2 ip neigh
+------------------------------------------------------------------------
+
+
+sudo ip netns exec qrouter-4cd24a8b-0d49-4940-8de2-ae44515679c2 ip addr
+-----------------------------------------------------------------------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+724: qg-6ce850ea-61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1
+    link/ether fa:16:3e:ac:6f:7d brd ff:ff:ff:ff:ff:ff
+    inet 172.24.4.149/24 brd 172.24.4.255 scope global qg-6ce850ea-61
+       valid_lft forever preferred_lft forever
+    inet6 2001:db8::1/64 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feac:6f7d/64 scope link 
+       valid_lft forever preferred_lft forever
+
+sudo ip netns exec qrouter-4cd24a8b-0d49-4940-8de2-ae44515679c2 ip link
+-----------------------------------------------------------------------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+724: qg-6ce850ea-61: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1
+    link/ether fa:16:3e:ac:6f:7d brd ff:ff:ff:ff:ff:ff
+
+sudo ip netns exec qrouter-4cd24a8b-0d49-4940-8de2-ae44515679c2 ip route
+------------------------------------------------------------------------
+
+default via 172.24.4.1 dev qg-6ce850ea-61 
+172.24.4.0/24 dev qg-6ce850ea-61  proto kernel  scope link  src 172.24.4.149 
+
+sudo ip netns exec qdhcp-224706c6-3014-400d-bb16-8ac003dd393e ip neigh
+----------------------------------------------------------------------
+
+
+sudo ip netns exec qdhcp-224706c6-3014-400d-bb16-8ac003dd393e ip addr
+---------------------------------------------------------------------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+
+sudo ip netns exec qdhcp-224706c6-3014-400d-bb16-8ac003dd393e ip link
+---------------------------------------------------------------------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+
+sudo ip netns exec qdhcp-224706c6-3014-400d-bb16-8ac003dd393e ip route
+----------------------------------------------------------------------
+
+
+
+Open vSwitch Dump
+=================
+
+sudo ovs-vsctl show
+-------------------
+
+31892fbf-a625-4da1-bed6-8451771e30cd
+    Manager "ptcp:6640:127.0.0.1"
+        is_connected: true
+    Bridge br-tun
+        Controller "tcp:127.0.0.1:6633"
+            is_connected: true
+        fail_mode: secure
+        Port patch-int
+            Interface patch-int
+                type: patch
+                options: {peer=patch-tun}
+        Port br-tun
+            Interface br-tun
+                type: internal
+    Bridge br-int
+        Controller "tcp:127.0.0.1:6633"
+            is_connected: true
+        fail_mode: secure
+        Port br-int
+            Interface br-int
+                type: internal
+        Port int-br-ex
+            Interface int-br-ex
+                type: patch
+                options: {peer=phy-br-ex}
+        Port patch-tun
+            Interface patch-tun
+                type: patch
+                options: {peer=patch-int}
+    Bridge br-ex
+        Controller "tcp:127.0.0.1:6633"
+            is_connected: true
+        fail_mode: secure
+        Port phy-br-ex
+            Interface phy-br-ex
+                type: patch
+                options: {peer=int-br-ex}
+        Port br-ex
+            Interface br-ex
+                type: internal
+        Port "qg-6ce850ea-61"
+            Interface "qg-6ce850ea-61"
+                type: internal
+    Bridge "br-ens785f0"
+        Controller "tcp:127.0.0.1:6633"
+            is_connected: true
+        fail_mode: secure
+        Port "phy-br-ens785f0"
+            Interface "phy-br-ens785f0"
+                type: patch
+                options: {peer="int-br-ens785f0"}
+        Port "br-ens785f0"
+            Interface "br-ens785f0"
+                type: internal
+    Bridge br-tap
+        Port patch-tap-tun
+            Interface patch-tap-tun
+                type: patch
+                options: {peer=patch-tun-tap}
+        Port br-tap
+            Interface br-tap
+                type: internal
+        Port patch-tap-int
+            Interface patch-tap-int
+                type: patch
+                options: {peer=patch-int-tap}
+    ovs_version: "2.9.0"
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-ens785f0
+--------------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (OF1.3) (xid=0x2): dpid:0000a2d254c99f4b
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS GROUP_STATS QUEUE_STATS
+OFPST_PORT_DESC reply (OF1.3) (xid=0x3):
+ 1(phy-br-ens785f0): addr:32:8c:4f:3c:54:b0
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-ens785f0): addr:a2:d2:54:c9:9f:4b
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (OF1.3) (xid=0x5): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-ex
+--------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (OF1.3) (xid=0x2): dpid:00008a5019b1944a
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS GROUP_STATS QUEUE_STATS
+OFPST_PORT_DESC reply (OF1.3) (xid=0x3):
+ 1(phy-br-ex): addr:12:02:14:62:38:74
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ 2(qg-6ce850ea-61): addr:00:00:00:00:00:00
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-ex): addr:8a:50:19:b1:94:4a
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (OF1.3) (xid=0x5): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-int
+---------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (OF1.3) (xid=0x2): dpid:0000febc9c813d49
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS GROUP_STATS QUEUE_STATS
+OFPST_PORT_DESC reply (OF1.3) (xid=0x3):
+ 1(int-br-ex): addr:ea:55:34:72:0d:3c
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ 2(patch-tun): addr:66:a8:bd:52:3c:2c
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-int): addr:fe:bc:9c:81:3d:49
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (OF1.3) (xid=0x5): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-tap
+---------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (xid=0x2): dpid:0000560012e46e4b
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS QUEUE_STATS ARP_MATCH_IP
+actions: output enqueue set_vlan_vid set_vlan_pcp strip_vlan mod_dl_src mod_dl_dst mod_nw_src mod_nw_dst mod_nw_tos mod_tp_src mod_tp_dst
+ 1(patch-tap-int): addr:b6:e4:5a:d4:d0:7a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 2(patch-tap-tun): addr:e6:da:b2:ca:10:30
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-tap): addr:56:00:12:e4:6e:4b
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (xid=0x4): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-tun
+---------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (OF1.3) (xid=0x2): dpid:00008a355c651a41
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS GROUP_STATS QUEUE_STATS
+OFPST_PORT_DESC reply (OF1.3) (xid=0x3):
+ 1(patch-int): addr:4a:96:f5:b4:96:3f
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-tun): addr:8a:35:5c:65:1a:41
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (OF1.3) (xid=0x5): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-ens785f0
+-------------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (OF1.3) (xid=0x2):
+ 1(phy-br-ens785f0): addr:32:8c:4f:3c:54:b0
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-ens785f0): addr:a2:d2:54:c9:9f:4b
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-ex
+-------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (OF1.3) (xid=0x2):
+ 1(phy-br-ex): addr:12:02:14:62:38:74
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ 2(qg-6ce850ea-61): addr:00:00:00:00:00:00
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-ex): addr:8a:50:19:b1:94:4a
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-int
+--------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (OF1.3) (xid=0x2):
+ 1(int-br-ex): addr:ea:55:34:72:0d:3c
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ 2(patch-tun): addr:66:a8:bd:52:3c:2c
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-int): addr:fe:bc:9c:81:3d:49
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-tap
+--------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (xid=0x2):
+ 1(patch-tap-int): addr:b6:e4:5a:d4:d0:7a
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 2(patch-tap-tun): addr:e6:da:b2:ca:10:30
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-tap): addr:56:00:12:e4:6e:4b
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-tun
+--------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (OF1.3) (xid=0x2):
+ 1(patch-int): addr:4a:96:f5:b4:96:3f
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-tun): addr:8a:35:5c:65:1a:41
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-ens785f0
+--------------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (OF1.3) (xid=0x2): 2 ports
+  port LOCAL: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+           duration=669.552s
+  port  1: rx pkts=0, bytes=0, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=0, bytes=0, drop=?, errs=?, coll=?
+           duration=669.539s
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-ex
+--------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (OF1.3) (xid=0x2): 3 ports
+  port  1: rx pkts=6, bytes=708, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=2, bytes=300, drop=?, errs=?, coll=?
+           duration=669.551s
+  port LOCAL: rx pkts=87, bytes=5492, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=12, bytes=1416, drop=0, errs=0, coll=0
+           duration=669.564s
+  port  2: rx pkts=58, bytes=4104, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=34, bytes=2472, drop=0, errs=0, coll=0
+           duration=669.567s
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-int
+---------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (OF1.3) (xid=0x2): 3 ports
+  port  1: rx pkts=2, bytes=300, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=6, bytes=708, drop=?, errs=?, coll=?
+           duration=669.568s
+  port LOCAL: rx pkts=0, bytes=0, drop=96, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+           duration=669.603s
+  port  2: rx pkts=0, bytes=0, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=6, bytes=708, drop=?, errs=?, coll=?
+           duration=669.564s
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-tap
+---------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (xid=0x2): 3 ports
+  port LOCAL: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+  port  1: rx pkts=0, bytes=0, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=0, bytes=0, drop=?, errs=?, coll=?
+  port  2: rx pkts=0, bytes=0, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=0, bytes=0, drop=?, errs=?, coll=?
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-tun
+---------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (OF1.3) (xid=0x2): 2 ports
+  port LOCAL: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+           duration=669.604s
+  port  1: rx pkts=6, bytes=708, drop=?, errs=?, frame=?, over=?, crc=?
+           tx pkts=0, bytes=0, drop=?, errs=?, coll=?
+           duration=669.585s
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-ens785f0
+--------------------------------------------------------------------------------------------------------
+
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-ex
+--------------------------------------------------------------------------------------------------
+
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x5a7a1fc819b79ea8, duration=667.309s, table=0, n_packets=6, n_bytes=708, priority=2,in_port=1 actions=drop
+ cookie=0x5a7a1fc819b79ea8, duration=667.318s, table=0, n_packets=2, n_bytes=300, priority=0 actions=NORMAL
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-int
+---------------------------------------------------------------------------------------------------
+
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x55145a3961adb7fc, duration=667.524s, table=0, n_packets=0, n_bytes=0, priority=65535,vlan_tci=0x0fff/0x1fff actions=drop
+ cookie=0x55145a3961adb7fc, duration=667.320s, table=0, n_packets=2, n_bytes=300, priority=2,in_port=1 actions=drop
+ cookie=0x55145a3961adb7fc, duration=667.529s, table=0, n_packets=6, n_bytes=708, priority=0 actions=goto_table:60
+ cookie=0x55145a3961adb7fc, duration=667.531s, table=23, n_packets=0, n_bytes=0, priority=0 actions=drop
+ cookie=0x55145a3961adb7fc, duration=667.526s, table=24, n_packets=0, n_bytes=0, priority=0 actions=drop
+ cookie=0x55145a3961adb7fc, duration=667.527s, table=60, n_packets=6, n_bytes=708, priority=3 actions=NORMAL
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-tap
+---------------------------------------------------------------------------------------------------
+
+NXST_FLOW reply (xid=0x4):
+ cookie=0x0, duration=668.948s, table=0, n_packets=0, n_bytes=0, idle_age=668, priority=0 actions=NORMAL
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-tun
+---------------------------------------------------------------------------------------------------
+
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0xce668544e698d4c4, duration=667.469s, table=0, n_packets=6, n_bytes=708, priority=1,in_port=1 actions=goto_table:2
+ cookie=0xce668544e698d4c4, duration=667.468s, table=0, n_packets=0, n_bytes=0, priority=0 actions=drop
+ cookie=0xce668544e698d4c4, duration=667.466s, table=2, n_packets=0, n_bytes=0, priority=0,dl_dst=00:00:00:00:00:00/01:00:00:00:00:00 actions=goto_table:20
+ cookie=0xce668544e698d4c4, duration=667.464s, table=2, n_packets=6, n_bytes=708, priority=0,dl_dst=01:00:00:00:00:00/01:00:00:00:00:00 actions=goto_table:22
+ cookie=0xce668544e698d4c4, duration=667.462s, table=3, n_packets=0, n_bytes=0, priority=0 actions=drop
+ cookie=0xce668544e698d4c4, duration=667.460s, table=4, n_packets=0, n_bytes=0, priority=0 actions=drop
+ cookie=0xce668544e698d4c4, duration=667.459s, table=6, n_packets=0, n_bytes=0, priority=0 actions=drop
+ cookie=0xce668544e698d4c4, duration=667.457s, table=10, n_packets=0, n_bytes=0, priority=1 actions=learn(table=20,hard_timeout=300,priority=1,cookie=0xce668544e698d4c4,NXM_OF_VLAN_TCI[0..11],NXM_OF_ETH_DST[]=NXM_OF_ETH_SRC[],load:0->NXM_OF_VLAN_TCI[],load:NXM_NX_TUN_ID[]->NXM_NX_TUN_ID[],output:OXM_OF_IN_PORT[]),output:1
+ cookie=0xce668544e698d4c4, duration=667.454s, table=20, n_packets=0, n_bytes=0, priority=0 actions=goto_table:22
+ cookie=0xce668544e698d4c4, duration=667.452s, table=22, n_packets=6, n_bytes=708, priority=0 actions=drop
+
+
+IP Tables Dump
+==============
+
+sudo iptables --line-numbers -L -nv -t filter
+---------------------------------------------
+
+Chain INPUT (policy ACCEPT 171K packets, 41M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 ACCEPT     udp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            udp dpt:53
+2        0     0 ACCEPT     tcp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:53
+3        0     0 ACCEPT     udp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            udp dpt:67
+4        0     0 ACCEPT     tcp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:67
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 ACCEPT     all  --  *      virbr0  0.0.0.0/0            192.168.122.0/24     ctstate RELATED,ESTABLISHED
+2        0     0 ACCEPT     all  --  virbr0 *       192.168.122.0/24     0.0.0.0/0           
+3        0     0 ACCEPT     all  --  virbr0 virbr0  0.0.0.0/0            0.0.0.0/0           
+4        0     0 REJECT     all  --  *      virbr0  0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
+5        0     0 REJECT     all  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
+
+Chain OUTPUT (policy ACCEPT 171K packets, 46M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 ACCEPT     udp  --  *      virbr0  0.0.0.0/0            0.0.0.0/0            udp dpt:68
+
+sudo iptables --line-numbers -L -nv -t nat
+------------------------------------------
+
+Chain PREROUTING (policy ACCEPT 4 packets, 788 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain INPUT (policy ACCEPT 4 packets, 788 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 362 packets, 22491 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain POSTROUTING (policy ACCEPT 362 packets, 22491 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 RETURN     all  --  *      *       192.168.122.0/24     224.0.0.0/24        
+2        0     0 RETURN     all  --  *      *       192.168.122.0/24     255.255.255.255     
+3        0     0 MASQUERADE  tcp  --  *      *       192.168.122.0/24    !192.168.122.0/24     masq ports: 1024-65535
+4        0     0 MASQUERADE  udp  --  *      *       192.168.122.0/24    !192.168.122.0/24     masq ports: 1024-65535
+5        0     0 MASQUERADE  all  --  *      *       192.168.122.0/24    !192.168.122.0/24    
+6       43  2987 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+7        0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+8        0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+9        0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+10       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+11       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+12       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+13       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+14       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+15       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+16       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+17       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+18       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+19       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+20       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+21       0     0 MASQUERADE  all  --  *      ens785f0  172.24.4.0/24        0.0.0.0/0           
+
+sudo iptables --line-numbers -L -nv -t mangle
+---------------------------------------------
+
+Chain PREROUTING (policy ACCEPT 171K packets, 41M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain INPUT (policy ACCEPT 171K packets, 41M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 171K packets, 46M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain POSTROUTING (policy ACCEPT 171K packets, 46M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 CHECKSUM   udp  --  *      virbr0  0.0.0.0/0            0.0.0.0/0            udp dpt:68 CHECKSUM fill
+
+
+EB Tables Dump
+==============
+
+sudo ebtables -t filter -L
+--------------------------
+
+Bridge table: filter
+
+Bridge chain: INPUT, entries: 0, policy: ACCEPT
+
+Bridge chain: FORWARD, entries: 0, policy: ACCEPT
+
+Bridge chain: OUTPUT, entries: 0, policy: ACCEPT
+
+sudo ebtables -t nat -L
+-----------------------
+
+Bridge table: nat
+
+Bridge chain: PREROUTING, entries: 0, policy: ACCEPT
+
+Bridge chain: OUTPUT, entries: 0, policy: ACCEPT
+
+Bridge chain: POSTROUTING, entries: 0, policy: ACCEPT
+
+sudo ebtables -t broute -L
+--------------------------
+
+Bridge table: broute
+
+Bridge chain: BROUTING, entries: 0, policy: ACCEPT
+
+
+Compute consoles
+================
+
+
+nova-compute Guru Meditation Report
+===================================
+
+28926
+killall -e -USR2 nova-compute
+-----------------------------
+
+
+guru meditation report in nova-compute log
+
+neutron-dhcp-agent Guru Meditation Report
+=========================================
+
+15804
+killall -e -USR2 neutron-dhcp-agent
+-----------------------------------
+
+
+guru meditation report in neutron-dhcp-agent log
+
+neutron-l3-agent Guru Meditation Report
+=======================================
+
+16479
+killall -e -USR2 neutron-l3-agent
+---------------------------------
+
+
+guru meditation report in neutron-l3-agent log
+
+neutron-linuxbridge-agent Guru Meditation Report
+================================================
+
+Skipping as neutron-linuxbridge-agent does not appear to be running
+
+neutron-metadata-agent Guru Meditation Report
+=============================================
+
+17135
+17828
+17830
+17831
+17832
+17833
+17834
+17835
+17837
+17838
+17839
+17840
+17841
+17842
+17843
+17844
+17845
+17846
+17847
+killall -e -USR2 neutron-metadata-agent
+---------------------------------------
+
+
+guru meditation report in neutron-metadata-agent log
+
+neutron-openvswitch-agent Guru Meditation Report
+================================================
+
+15214
+killall -e -USR2 neutron-openvswitch-agent
+------------------------------------------
+
+
+guru meditation report in neutron-openvswitch-agent log
+
+cinder-volume Guru Meditation Report
+====================================
+
+32857
+33211
+killall -e -USR2 cinder-volume
+------------------------------
+
+
+guru meditation report in cinder-volume log
+
+/var/core dumps
+===============
+
+ls -ltrah /var/core
+-------------------
+
+total 8.0K
+drwxr-xr-x 15 root root 4.0K Jul 30 14:00 ..
+drwxrwxrwx  2 root root 4.0K Jul 30 14:00 .
+
+World dumping... see /opt/stack/logs/worlddump-2019-01-02-202055.txt for details

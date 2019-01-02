@@ -1,0 +1,41 @@
+
+[DEFAULT]
+logging_exception_prefix = ERROR %(name)s [01;35m%(instance)s[00m
+logging_default_format_string = %(color)s%(levelname)s %(name)s [[00;36m-%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
+logging_context_format_string = %(color)s%(levelname)s %(name)s [[01;36m%(global_request_id)s %(request_id)s [00;36m%(project_name)s %(user_name)s%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
+logging_debug_format_suffix = [00;33m{{(pid=%(process)d) %(funcName)s %(pathname)s:%(lineno)d}}[00m
+public_endpoint = http://172.16.3.11/image
+registry_host = 172.16.3.11
+enable_v1_api = False
+transport_url = rabbit://stackrabbit:devstack@172.16.3.11:5672/
+lock_path = /opt/stack/data/glance/locks
+image_cache_dir = /opt/stack/data/glance/cache/
+use_syslog = False
+debug = True
+
+[database]
+connection = mysql+pymysql://root:devstack@127.0.0.1/glance?charset=utf8
+
+[paste_deploy]
+flavor = keystone+cachemanagement
+
+[keystone_authtoken]
+memcached_servers = localhost:11211
+signing_dir = /var/cache/glance/api
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = devstack
+username = glance
+auth_url = http://172.16.3.11/identity
+auth_type = password
+
+[oslo_messaging_notifications]
+driver = messagingv2
+
+[glance_store]
+filesystem_store_datadir = /opt/stack/data/glance/images/
+
+[cors]
+allowed_origin = http://172.16.3.11
