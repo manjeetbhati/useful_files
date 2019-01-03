@@ -1,1 +1,1 @@
-/opt/stack/logs/stack.sh.log.2019-01-02-140800
+/opt/stack/logs/stack.sh.log.2019-01-03-145703

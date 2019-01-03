@@ -1,2 +1,0 @@
-[ERROR] /opt/workingdir/devstack/lib/glance:353 g-api did not start
-[ERROR] /opt/workingdir/devstack/lib/glance:353 g-api did not start

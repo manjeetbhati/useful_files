@@ -1,4 +1,5 @@
 [DEFAULT]
+service_plugins = neutron.services.l3_router.l3_router_plugin.L3RouterPlugin,taas
 rpc_state_report_workers = 0
 api_workers = 18
 notify_nova_on_port_data_changes = True

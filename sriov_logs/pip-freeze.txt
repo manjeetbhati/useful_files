@@ -54,7 +54,7 @@ filelock==3.0.10
 fixtures==3.0.0
 flake8==2.6.2
 flake8-docstrings==0.2.1.post1
-flake8-import-order==0.12
+flake8-import-order==0.11
 Flask==1.0.2
 Flask-RESTful==0.3.7
 freezegun==0.3.11
@@ -74,7 +74,7 @@ google-auth-httplib2==0.0.3
 greenlet==0.4.15
 grpcio==1.15.0
 hacking==1.1.0
--e git+https://git.openstack.org/openstack/horizon.git@07070c437dd90384066e99c3123577271ef5f3e0#egg=horizon
+-e git+https://git.openstack.org/openstack/horizon.git@097d139997d4d089a2262ab5dc67c1ab5a9e58eb#egg=horizon
 httplib2==0.12.0
 idna==2.8
 imagesize==1.1.0
@@ -108,23 +108,25 @@ more-itertools==5.0.0
 mox3==0.26.0
 msgpack==0.6.0
 munch==2.3.2
+mysqlclient==1.3.7
 netaddr==0.7.19
 netifaces==0.10.7
 networkx==2.2
--e git://git.openstack.org/openstack/neutron.git@2e4b7fa2c0dbe4c5ba89c92ad02635c78dcf5f51#egg=neutron
+-e git://git.openstack.org/openstack/neutron.git@e60da724c4b167f86429dadd8c8a45cf5ec350ba#egg=neutron
 neutron-lib==1.21.0
 nodeenv==1.3.3
--e git+https://git.openstack.org/openstack/nova.git@357b8b38e88300948bb2e07d1bbaabd1e9d7b60e#egg=nova
+-e git+https://git.openstack.org/openstack/nova.git@8ef3d253a086e4f8575f5221d4515cda421abea2#egg=nova
 numpy==1.15.4
 oauth2client==4.1.3
 oauthlib==2.1.0
--e git+https://git.openstack.org/openstack/placement.git@3d08aaff7f39b32bb067782c52fa2d3e68f0adf2#egg=openstack_placement
+-e git+https://git.openstack.org/openstack/placement.git@1e213276bbecc3cfaf6dfb83ae23b4414567f441#egg=openstack_placement
 openstackdocstheme==1.28.0
 openstacksdk==0.22.0
 os-api-ref==1.6.0
 os-brick==2.6.2
 os-client-config==1.31.2
 os-ken==0.3.1
+os-resource-classes==0.1.0
 os-service-types==1.4.0
 os-testr==1.0.0
 os-traits==0.10.0
@@ -253,7 +255,7 @@ stevedore==1.30.0
 subprocess32==3.5.3
 suds-jurko==0.6
 systemd-python==234
--e git+https://git.openstack.org/openstack/tap-as-a-service@1785207cb0eb9b04f32b1e84964ae68223098492#egg=tap_as_a_service
+-e git+file:///dev/null@428b7f730c11fd591c287b00a5c34ae220f42e69#egg=tap_as_a_service
 taskflow==3.3.1
 -e git+https://git.openstack.org/openstack/tempest.git@7e4087fb104bc3ac9608c524f2b7c875205ccbbb#egg=tempest
 Tempita==0.5.2

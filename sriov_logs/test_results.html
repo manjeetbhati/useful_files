@@ -190,7 +190,7 @@ function showOutput(id, name) {
 <div class='heading'>
 <h1>Unit Test Report</h1>
 
-<p class='attribute'><strong>Status:</strong> Failure 1</p>
+<p class='attribute'><strong>Status:</strong> Pass 1</p>
 
 <p class='description'></p>
 </div>
@@ -224,11 +224,11 @@ function showOutput(id, name) {
     <td> </td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td class="testname"><class 'testtools.testcase.PlaceHolder'></td>
     <td class="small">1</td>
-    <td class="small">0</td>
     <td class="small">1</td>
+    <td class="small">0</td>
     <td class="small">0</td>
     <td class="small">0</td>
     <td class="small"><a href="javascript:showClassDetail('c1',1)"
@@ -236,54 +236,24 @@ function showOutput(id, name) {
     <td> </td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>TestTaaS)</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_tap_flow_data_mirroring[id-40903cbd-0e3c-464d-b311-dc77d3894e65,network,slow]</div></td>
     <td colspan='7' align='left'>
 
     <!--css div popup start-->
     <a class="popup_link" onfocus='this.blur();'
-    href="javascript:showTestDetail('div_ft1.1')" >
-        fail</a>
+    href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
         <a onfocus='this.blur();'
-onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: setUpClass (neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS)_StringException: Traceback (most recent call last):
-  File "tempest/test.py", line 172, in setUpClass
-    six.reraise(etype, value, trace)
-  File "tempest/test.py", line 157, in setUpClass
-    cls.setup_credentials()
-  File "tempest/test.py", line 373, in setup_credentials
-    credential_type=credentials_type)
-  File "tempest/test.py", line 676, in get_client_manager
-    creds = getattr(cred_provider, credentials_method)()
-  File "tempest/lib/common/dynamic_creds.py", line 353, in get_primary_creds
-    return self.get_credentials('primary')
-  File "tempest/lib/common/dynamic_creds.py", line 345, in get_credentials
-    credentials.tenant_id)
-  File "tempest/lib/common/dynamic_creds.py", line 254, in _create_network_resources
-    network = self._create_network(network_name, tenant_id)
-  File "tempest/lib/common/dynamic_creds.py", line 283, in _create_network
-    name=name, tenant_id=tenant_id)
-  File "tempest/lib/services/network/networks_client.py", line 27, in create_network
-    return self.create_resource(uri, post_data)
-  File "tempest/lib/services/network/base.py", line 61, in create_resource
-    resp, body = self.post(req_uri, req_post_data)
-  File "tempest/lib/common/rest_client.py", line 280, in post
-    return self.request('POST', url, extra_headers, headers, body, chunked)
-  File "tempest/lib/common/rest_client.py", line 676, in request
-    self._error_checker(resp, resp_body)
-  File "tempest/lib/common/rest_client.py", line 857, in _error_checker
-    resp=resp)
-tempest.lib.exceptions.UnexpectedResponseCode: Unexpected response code received
-Details: 503
-
-
+pt1.1: neutron_taas.tests.tempest_plugin.tests.scenario.test_taas.TestTaaS.test_tap_flow_data_mirroring[id-40903cbd-0e3c-464d-b311-dc77d3894e65,network,slow]
 
         </pre>
     </div>
@@ -295,8 +265,8 @@ Details: 503
 <tr id='total_row'>
     <td>Total</td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>

@@ -40,6 +40,7 @@ track_instance_changes = False
 enabled_filters = RetryFilter,AvailabilityZoneFilter,ComputeFilter,ComputeCapabilitiesFilter,ImagePropertiesFilter,ServerGroupAntiAffinityFilter,ServerGroupAffinityFilter,PciPassthroughFilter,NUMATopologyFilter
 
 [key_manager]
+fixed_key = bae3516cc1c0eb18b05440eba8012a4a880a2ee04d584a9c1579445e675b12defdc716ec
 backend = nova.keymgr.conf_key_mgr.ConfKeyManager
 
 [database]
