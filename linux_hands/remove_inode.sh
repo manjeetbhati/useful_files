@@ -7,3 +7,5 @@ fi
 inode=$1
 
 find . -inum $inode -exec rm -i {} \;
+
+ gcc -march=native -E -v - </dev/null 2>&1 | grep cc1
